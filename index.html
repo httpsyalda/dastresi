@@ -1,0 +1,4116 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dastresi</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!--header-->
+    <header
+      class="w-full desktop:h-[135px] top-0 shadow desktop:bg-white mobile:bg-gray-100 z-50 fixed mobile:h-[60px]"
+    >
+      <div class="desktop:mx-auto desktop:mt-5 desktop:w-[92%]">
+        <!--header top-->
+        <div
+          class="desktop:w-full desktop:flex desktop:justify-between desktop:gap-4 desktop:items-center desktop:h-14 hidden"
+        >
+          <!--header top right-->
+          <div
+            class="desktop:w-[80%] desktop:h-12 desktop:flex desktop:items-center desktop:gap-8"
+          >
+            <a href="#"
+              ><img
+                src="./public/images/header/logo.png"
+                alt="logo"
+                class="desktop:desktop:w-24 mobile:w-20 desktop:h-[40px]"
+            /></a>
+            <div
+              class="desktop:w-[370px] desktop:h-10 desktop:flex desktop:items-center desktop:bg-[#F7F8FA] desktop:rounded-xl desktop:shadow"
+            >
+              <label for="search-input">
+                <img
+                  src="./public/images/header/magnifying-glass.svg"
+                  alt="magnifying-glass"
+                  class="desktop:w-7 desktop:mr-1"
+                />
+              </label>
+              <input
+                id="search-input"
+                type="search"
+                placeholder="جستجو محصولات"
+                class="desktop:w-full desktop:outline-none desktop:pb-2 desktop:bg-[#F7F8FA] desktop:rounded-xl desktop:placeholder-[#757575] desktop:text-[#757575] desktop:font-['Shabnam'] desktop:py-[6px] desktop:px-[4px]"
+              />
+            </div>
+            <nav class="desktop:flex desktop:gap-7 desktop:w-[400px]">
+              <a
+                href="#"
+                class="desktop:font-['Shabnam'] desktop:text-[#A3A3A3] desktop:text-sm desktop:block desktop:duration-300 desktop:hover:text-[#0A295A]"
+              >
+                باشگاه مشتریان
+              </a>
+              <a
+                href="#"
+                class="desktop:font-['Shabnam'] desktop:text-[#A3A3A3] desktop:text-sm desktop:block desktop:duration-300 desktop:hover:text-[#0A295A]"
+              >
+                بلاگ
+              </a>
+              <a
+                href="#"
+                class="desktop:font-['Shabnam'] desktop:text-[#A3A3A3] desktop:text-sm desktop:block desktop:duration-300 desktop:hover:text-[#0A295A]"
+              >
+                ارتباط ما
+              </a>
+              <a
+                href="#"
+                class="desktop:font-['Shabnam'] desktop:text-[#A3A3A3] desktop:text-sm desktop:block desktop:duration-300 desktop:hover:text-[#0A295A]"
+              >
+                درباره ما
+              </a>
+            </nav>
+          </div>
+          <!--end header top right-->
+
+          <!--header top left-->
+          <div class="desktop:flex desktop:items-center desktop:gap-4">
+            <div class="desktop:flex desktop:gap-4 desktop:items-center hidden">
+              <a
+                href="#"
+                class="desktop:w-11 desktop:h-10 desktop:bg-[#F7F8FA] desktop:relative desktop:shadow desktop:flex desktop:justify-center desktop:items-center desktop:rounded-xl group"
+              >
+                <img
+                  src="./public/images/header/shopping-cart.svg"
+                  alt="shopping-cart"
+                  class="desktop:w-[26px] desktop:h-[26px] desktop:transition-all desktop:duration-300 desktop:group-hover:filter desktop:group-hover:invert-[10%] desktop:group-hover:brightness-[10%]"
+                />
+                <span
+                  class="desktop:absolute desktop:left-8 desktop:bottom-8 desktop:w-5 desktop:h-5 desktop:rounded-full desktop:bg-[#FE5F55] desktop:flex desktop:justify-center desktop:items-center desktop:text-white desktop:font-['Shabnam']"
+                  >۰</span
+                >
+              </a>
+              <a
+                href="#"
+                class="desktop:min-w-[105px] desktop:h-[42px] desktop:bg-[#0A5ABD] desktop:shadow desktop:text-center desktop:leading-10 desktop:text-sm desktop:rounded-xl desktop:text-white desktop:hover:bg-[#0A295A] desktop:duration-300 desktop:font-['Shabnam']"
+                >ورود و ثبت‌نام</a
+              >
+            </div>
+          </div>
+          <!--end header top left-->
+        </div>
+        <!--end header top-->
+
+        <!--header bottom-->
+        <div class="desktop:flex mt-[2px]">
+          <ul
+            class="desktop:flex desktop:justify-between desktop:w-full desktop:text-sm desktop:relative desktop:cursor-pointer font-['Shabnam'] desktop:h-14 hidden"
+          >
+            <li class="menu relative group">
+              <a href="#" class="desktop:block desktop:text-[#FE5F55]">خانه</a>
+            </li>
+
+            <li class="menu relative group">
+              <a href="#" class="desktop:block"
+                >لوازم جانبی موبایل و کامپیوتر</a
+              >
+              <img
+                src="./public/images/header/dropdown.svg"
+                alt="dropdown"
+                class="desktop:w-5 desktop:mt-[0.5] desktop:mr-2"
+              />
+              <!--submenu-->
+              <ul
+                class="desktop:absolute desktop:hidden desktop:group-hover:block desktop:bg-white desktop:shadow rounded-b desktop:top-[57.5px] desktop:w-[300px] desktop:right-[1px]"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd] desktop:mt-3"
+                    >هولدر و نگه‌دارنده</a
+                  >
+                </li>
+
+                <li
+                  class="desktop:flex desktop:items-center desktop:justify-between desktop:hover:bg-gray-100"
+                >
+                  <a
+                    href="#"
+                    class="desktop:flex desktop:px-3 desktop:py-3 desktop:w-full desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd] relative"
+                    >تجهیزات ذخیره سازی</a
+                  >
+                  <img
+                    src="./public/images/header/more.png"
+                    alt="dropdown"
+                    class="desktop:w-[10px] desktop:h-[10px] desktop:ml-3"
+                  />
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >اسپیکر</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >ماوس و کیبورد و پدموس</a
+                  >
+                </li>
+
+                <li
+                  class="desktop:flex desktop:items-center desktop:justify-between desktop:hover:bg-gray-100"
+                >
+                  <a
+                    href="#"
+                    class="desktop:flex desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:w-full desktop:hover:text-[#0a5abd]"
+                    >هندزفری و هدست، میکروفون</a
+                  >
+                  <img
+                    src="./public/images/header/more.png"
+                    alt="dropdown"
+                    class="desktop:w-[10px] desktop:h-[10px] desktop:ml-3"
+                  />
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >پاوربانک و جامپ استارتر</a
+                  >
+                </li>
+
+                <li
+                  class="desktop:flex desktop:items-center desktop:justify-between desktop:hover:bg-gray-100"
+                >
+                  <a
+                    href="#"
+                    class="desktop:flex desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:w-full desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >کابل شارژر</a
+                  >
+                  <img
+                    src="./public/images/header/more.png"
+                    alt="dropdown"
+                    class="desktop:w-[10px] desktop:h-[10px] desktop:ml-3"
+                  />
+                </li>
+
+                <li
+                  class="desktop:flex desktop:items-center desktop:justify-between desktop:hover:bg-gray-100"
+                >
+                  <a
+                    href="#"
+                    class="desktop:flex desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd] desktop:w-full"
+                    >آداپتور و شارژر</a
+                  >
+                  <img
+                    src="./public/images/header/more.png"
+                    alt="dropdown"
+                    class="desktop:w-[10px] desktop:h-[10px] desktop:ml-3"
+                  />
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >دسته بازی و خنک کننده موبایل</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >انواع تبدیل برق</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >کابل و دانگ انتقال تصویر</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >انواع هاب</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >فن خنک کننده کامپیوتر</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >قاب و گلس</a
+                  >
+                </li>
+              </ul>
+              <!--end submenu-->
+            </li>
+
+            <li class="menu relative group">
+              <a href="#" class="desktop:block"> کابل - مبدل - رابط</a>
+              <img
+                src="./public/images/header/dropdown.svg"
+                alt="dropdown"
+                class="desktop:w-5 desktop:mt-[0.5] desktop:mr-2"
+              />
+              <!--submenu-->
+              <ul
+                class="desktop:absolute desktop:hidden desktop:group-hover:block desktop:bg-white desktop:shadow rounded-b desktop:top-[57.5px] desktop:w-[300px] desktop:right-[1px]"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd] desktop:mt-3"
+                    >کابل HDMI</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >کابل پرینتر</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >کابل‌ هارد اکسترنال</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >انواع رابط و تبدیل</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >کابل AUX</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >کابل ۲ به ۱ صدا</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >کابل شارژ</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >کابل اپتیکال</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >کابل و فیش OTG</a
+                  >
+                </li>
+              </ul>
+              <!--end submenu-->
+            </li>
+
+            <li class="menu relative group">
+              <a href="#" class="desktop:block">لوازم تولید محتوا</a>
+              <img
+                src="./public/images/header/dropdown.svg"
+                alt="dropdown"
+                class="desktop:w-5 desktop:mt-[0.5] desktop:mr-2"
+              />
+              <!--submenu-->
+              <ul
+                class="desktop:absolute desktop:hidden desktop:group-hover:block desktop:bg-white desktop:shadow rounded-b desktop:top-[57.5px] desktop:w-[300px] desktop:right-[1px]"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-2 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd] desktop:mt-2"
+                    >میکروفون</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-2 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >رینگ‌لایت و پایه</a
+                  >
+                </li>
+              </ul>
+              <!--end submenu-->
+            </li>
+
+            <li class="menu relative group">
+              <a href="#" class="desktop:block">لوازم شبکه</a>
+              <img
+                src="./public/images/header/dropdown.svg"
+                alt="dropdown"
+                class="desktop:w-5 desktop:mt-[0.5] desktop:mr-2"
+              />
+              <!--submenu-->
+              <ul
+                class="desktop:absolute desktop:hidden desktop:group-hover:block desktop:bg-white desktop:shadow rounded-b desktop:top-[57.5px] desktop:w-[300px] desktop:right-[1px]"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-2 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd] desktop:mt-2"
+                    >مودم - روتر</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-2 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >هاب شبکه</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-2 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >مودم همراه</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-2 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >لوازم جانبی</a
+                  >
+                </li>
+              </ul>
+              <!--end submenu-->
+            </li>
+
+            <li class="menu relative group">
+              <a href="#" class="desktop:block">کنسول بازی و لوازم جانبی</a>
+              <img
+                src="./public/images/header/dropdown.svg"
+                alt="dropdown"
+                class="desktop:w-5 desktop:mt-[0.5] desktop:mr-2"
+              />
+              <!--submenu-->
+              <ul
+                class="desktop:absolute desktop:hidden desktop:group-hover:block desktop:bg-white desktop:shadow rounded-b desktop:top-[57.5px] desktop:w-[300px] desktop:right-[1px]"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-2 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd] desktop:mt-2"
+                    >هندزفری و هدست</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-2 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >دسته بازی</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-2 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >ماوس و کیبورد</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-2 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >کیف</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-2 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >کنسول</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-2 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >شارژ دسته بازی</a
+                  >
+                </li>
+              </ul>
+              <!--end submenu-->
+            </li>
+
+            <li class="menu relative group">
+              <a href="#" class="desktop:block">لوازم خانگی و شخصی</a>
+              <img
+                src="./public/images/header/dropdown.svg"
+                alt="dropdown"
+                class="desktop:w-5 desktop:mt-[0.5] desktop:mr-2"
+              />
+              <!--submenu-->
+              <ul
+                class="desktop:absolute desktop:hidden desktop:group-hover:block desktop:bg-white desktop:shadow rounded-b desktop:top-[57.5px] desktop:w-[290px] desktop:right-[1px]"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-2 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd] desktop:mt-2"
+                    >انواع گجت‌های جذاب</a
+                  >
+                </li>
+                <li
+                  class="desktop:flex desktop:items-center desktop:justify-between desktop:hover:bg-gray-100"
+                >
+                  <a
+                    href="#"
+                    class="desktop:flex desktop:px-3 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd] desktop:w-full"
+                    >باتری و شارژ</a
+                  >
+                  <img
+                    src="./public/images/header/more.png"
+                    alt="dropdown"
+                    class="desktop:w-[10px] desktop:h-[10px] desktop:ml-3"
+                  />
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-2 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >اندروید باکس و گیرنده دیجیتال</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-2 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >آنتن رومیزی</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-2 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >مچ بند و ساعت هوشمند</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-2 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >محصولات کمبو</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-2 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >رابط برق و USB</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="desktop:block desktop:px-2 desktop:py-3 desktop:hover:bg-gray-100 desktop:text-xs desktop:text-[#666666] desktop:hover:text-[#0a5abd]"
+                    >اف ام پلیر</a
+                  >
+                </li>
+              </ul>
+              <!--end submenu-->
+            </li>
+
+            <li class="menu relative group">
+              <a href="#" class="desktop:block">برندها</a>
+              <img
+                src="./public/images/header/dropdown.svg"
+                alt="dropdown"
+                class="desktop:w-5 desktop:mt-[0.5] desktop:mr-2"
+              />
+              <!--submenu-->
+              <div
+                class="desktop:absolute desktop:hidden desktop:group-hover:block desktop:bg-white desktop:shadow-lg desktop:rounded-b-md desktop:mt-[7.5px] desktop:p-2 desktop:w-[1240px] desktop:rtl desktop:left-0 desktop:top-[50px]"
+              >
+                <div
+                  class="desktop:grid desktop:grid-cols-5 desktop:text-xs text-[#666666] desktop:border-b desktop:border-gray-200"
+                >
+                  <!--columns-->
+                  <div class="desktop:border-l desktop:border-gray-200">
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>هایلو</span>
+                      <span>Haylou</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>دای هارد</span>
+                      <span>Die Hard</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>اسکال کندی</span>
+                      <span>SkullCandy</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>اپل</span>
+                      <span>Apple</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>کملیون</span>
+                      <span>Camelion</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>کلومن پلاس</span>
+                      <span>Koluman Plus</span>
+                    </div>
+                  </div>
+
+                  <div class="desktop:border-l desktop:border-gray-200">
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>یسیدو</span>
+                      <span>Yesido</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>نزتک</span>
+                      <span>Naztech</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>پرووان</span>
+                      <span>ProOne</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>ال دی نیو</span>
+                      <span>Ldnio</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>دوراسل</span>
+                      <span>Duracell</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>سومو</span>
+                      <span>Somo</span>
+                    </div>
+                  </div>
+
+                  <div class="desktop:border-l desktop:border-gray-200">
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd] desktop:px-1"
+                    >
+                      <span>بیسوس</span>
+                      <span>Baseus</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>بویا</span>
+                      <span>Boya</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>مک دودو</span>
+                      <span>Mcdodo</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>پاورولوژی</span>
+                      <span>Powerology</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>راوپاور</span>
+                      <span>Ravpower</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>آکی</span>
+                      <span>Aukey</span>
+                    </div>
+                  </div>
+
+                  <div class="desktop:border-l desktop:border-gray-200">
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd] desktop:px-1"
+                    >
+                      <span>انکر</span>
+                      <span>Anker</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>آینوبن</span>
+                      <span>Inoben</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>مومکس</span>
+                      <span>Momax</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>وسترن دیجیتال</span>
+                      <span>Western Digital</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>شیائومی</span>
+                      <span>Xiamoi</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>پاناسونیک</span>
+                      <span>Panasonic</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd] desktop:px-1"
+                    >
+                      <span>نیکین</span>
+                      <span>Neekin</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>پایونیر</span>
+                      <span>Pioneer</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>جی پی</span>
+                      <span>GP</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>ای فورتک</span>
+                      <span>A4tech</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>وان مور</span>
+                      <span>1more</span>
+                    </div>
+                    <div
+                      class="desktop:flex desktop:justify-between desktop:py-2 desktop:px-1 desktop:hover:bg-gray-100 desktop:hover:text-[#0a5abd]"
+                    >
+                      <span>مکسل</span>
+                      <span>Maxell</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="desktop:mt-4 desktop:mb-2">
+                  <a
+                    href="#"
+                    class="desktop:text-red-500 desktop:text-xs desktop:hover:text-[#0a5abd] desktop:flex desktop:gap-1 desktop:items-center"
+                  >
+                    <span>مشاهده دیگر برندها</span>
+                    <img
+                      src="./public/images/header/left-chevron.png"
+                      alt=""
+                      class="desktop:w-2 desktop:h-2"
+                    />
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--end header bottom-->
+      </div>
+    </header>
+
+    <!--mobile header-->
+    <div
+      class="mobile:w-full mobile:top-0 mobile:shadow mobile:z-50 mobile:fixed mobile:h-[60px] mobile:bg-gray-100 mobile:p-3 mobile:flex mobile:items-center mobile:justify-between desktop:hidden"
+    >
+      <div
+        class="mobile:flex mobile:items-center mobile:justify-center mobile:gap-4"
+      >
+        <button class="menu-button">
+          <img
+            src="./public/images/header/menu-bar.png"
+            alt="menu-bars"
+            class="w-5"
+          />
+        </button>
+
+        <div
+          id="menu-overlay"
+          class="fixed inset-0 bg-black bg-opacity-50 hidden"
+        ></div>
+
+        <!--sidemenu-->
+        <div
+          id="side-menu"
+          class="fixed top-0 right-0 w-[300px] h-full bg-white shadow-lg translate-x-full transition-transform duration-300"
+        >
+          <div
+            class="flex justify-center items-center border-b border-black-08 p-4"
+          >
+            <img
+              src="./public/images/header/logo.png"
+              alt="logo"
+              class="h-24 mx-auto py-4"
+            />
+          </div>
+          <!--sidemenu items-->
+          <div class="flex border-b border-black-08">
+            <div class="flex flex-1 lg:max-w-screen-xl mx-auto px-4">
+              <div class="flex w-full justify-between font-['Shabnam']">
+                <a
+                  href="#"
+                  class="block p-3 text-xs text-gray-400 hover:text-black"
+                  >خانه</a
+                >
+                <a
+                  href="#"
+                  class="block p-3 text-xs text-gray-400 hover:text-black"
+                  >درباره ما</a
+                >
+                <a
+                  href="#"
+                  class="block p-3 text-xs text-gray-400 hover:text-black"
+                  >تماس با ما</a
+                >
+                <a
+                  href="#"
+                  class="block p-3 text-xs text-gray-400 hover:text-black"
+                  >بلاگ</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--sidemenu items-->
+
+          <!--sidemenu list-->
+          <div
+            class="overflow-y-auto custom-scrollbar mt-4 mr-2 mb-9"
+            style="max-height: 220px"
+          >
+            <div class="flex flex-col">
+              <span class="flex p-4 font-['Shabnam'] items-center">
+                <span class="flex flex-1">لوازم جانبی موبایل و کامپیوتر</span>
+                <img
+                  src="./public/images/header/dropdown.png"
+                  alt="dropdown"
+                  class="w-5 h-5"
+                />
+              </span>
+              <span class="flex p-4 font-['Shabnam'] items-center">
+                <span class="flex flex-1">کابل - مبدل - رابط </span>
+                <img
+                  src="./public/images/header/dropdown.png"
+                  alt="dropdown"
+                  class="w-5 h-5"
+                />
+              </span>
+              <span class="flex p-4 font-['Shabnam'] items-center">
+                <span class="flex flex-1">لوازم تولید محتوا</span>
+                <img
+                  src="./public/images/header/dropdown.png"
+                  alt="dropdown"
+                  class="w-5 h-5"
+                />
+              </span>
+              <span class="flex p-4 font-['Shabnam'] items-center">
+                <span class="flex flex-1">لوازم شبکه</span>
+                <img
+                  src="./public/images/header/dropdown.png"
+                  alt="dropdown"
+                  class="w-5 h-5"
+                />
+              </span>
+              <span class="flex p-4 font-['Shabnam'] items-center">
+                <span class="flex flex-1">کنسول بازی و لوازم جانبی</span>
+                <img
+                  src="./public/images/header/dropdown.png"
+                  alt="dropdown"
+                  class="w-5 h-5"
+                />
+              </span>
+              <span class="flex p-4 font-['Shabnam'] items-center">
+                <span class="flex flex-1">لوازم خانگی و شخصی</span>
+                <img
+                  src="./public/images/header/dropdown.png"
+                  alt="dropdown"
+                  class="w-5 h-5"
+                />
+              </span>
+              <span class="flex p-4 font-['Shabnam'] items-center">
+                <span class="flex flex-1">برند‌ها</span>
+                <img
+                  src="./public/images/header/dropdown.png"
+                  alt="dropdown"
+                  class="w-5 h-5"
+                />
+              </span>
+            </div>
+          </div>
+          <!--end sidemenu list-->
+
+          <!--customers club-->
+          <div
+            class="p-3 text-sm text-center rounded-xl mx-auto bg-[#0a295a] text-white hover:text-black mb-16 w-[268px] h-[45px] font-['Shabnam']"
+          >
+            ورود به باشگاه مشتریان
+          </div>
+          <!--customers club-->
+        </div>
+
+        <img
+          src="./public/images/header/logo.png"
+          alt="logo"
+          class="mobile:w-[60px] mobile:h-[25px]"
+        />
+      </div>
+
+      <div
+        class="mobile:flex mobile:items-center mobile:justify-center mobile:gap-5 mobile:pl-2"
+      >
+        <img
+          src="./public/images/header/magnifying-glass.png"
+          alt=""
+          class="mobile:w-5"
+        />
+        <img src="./public/images/header/user.svg" alt="" class="mobile:w-4" />
+        <div class="mobile:relative">
+          <img
+            src="./public/images/header/shopping-cart.png"
+            alt=""
+            class="mobile:w-6"
+          />
+          <span
+            class="mobile:absolute mobile:left-4 mobile:bottom-3 mobile:w-5 mobile:h-5 mobile:rounded-full mobile:bg-[#FE5F55] mobile:flex mobile:justify-center mobile:items-center mobile:text-white mobile:font-['Shabnam']"
+            >۰</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!--slide show-->
+    <div
+      class="w-full desktop:mt-[170px] mobile:mt-[90px] flex justify-center items-center cursor-pointer"
+    >
+      <div class="w-[90%] rounded-xl justify-center items-center">
+        <!--swiper-->
+        <div class="swiper myslideshow">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./public/images/slideshow/image-1.jpg"
+                class="rounded-xl"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./public/images/slideshow/image-2.jpg"
+                class="rounded-xl"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./public/images/slideshow/image-3.jpg"
+                class="rounded-xl"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./public/images/slideshow/image-4.jpg"
+                class="rounded-xl"
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination desktop:pb-4"></div>
+        </div>
+        <!--end swiper-->
+      </div>
+    </div>
+
+    <!--desktop daily offers-->
+    <div
+      class="desktop:mt-6 desktop:flex desktop:justify-center desktop:items-center desktop:mx-auto desktop:w-[95%] mobile:hidden"
+    >
+      <div class="desktop:px-12 bg-[#E2E2E2] desktop:pb-10 desktop:rounded-xl">
+        <!--heading-->
+        <div
+          class="desktop:flex desktop:justify-between desktop:py-8 desktop:items-center"
+        >
+          <div
+            class="desktop:flex desktop:justify-center desktop:items-center desktop:gap-2"
+          >
+            <img
+              src="./public/images/daily-offers/percentage.png"
+              alt="percentage"
+              class="desktop:w-9 desktop:h-9"
+            />
+            <h1
+              class="font-['Shabnam'] desktop:text-4xl text-[#757575] font-bold"
+            >
+              تخفیف‌های روزانه دسترسی
+            </h1>
+          </div>
+          <div
+            class="desktop:w-[90px] desktop:text-2xl font-['Shabnam'] desktop:text-[#757575]"
+          >
+            ۱۲:۲۵:۴۰
+          </div>
+        </div>
+
+        <div class="desktop:flex desktop:gap-6">
+          <!--1st column-->
+          <div
+            class="shadow rounded-xl bg-white desktop:border-l border-b border-gray-e2 desktop:p-4 desktop:cursor-pointer hover:shadow-xl desktop:h-full"
+          >
+            <img
+              src="./public/images/daily-offers/image-1.jpg"
+              alt=""
+              class="desktop:w-[285px] desktop:h-[285px]"
+            />
+            <p class="font-['Shabnam'] desktop:my-5 desktop:leading-8">
+              میکروفون یقه ای بی سیم بویا 4 مخاطب لایتنینگ مدل Boya BY-V4D
+            </p>
+            <div class="desktop:flex desktop:justify-between desktop:mt-28">
+              <span
+                class="desktop:font-['Shabnam'] desktop:text-[15px] desktop:text-[#8E8E8E] font-bold line-through"
+                >۹,۴۲۵,۰۰۰</span
+              >
+              <span
+                class="desktop:font-['Shabnam'] desktop:text-sm text-[#FE5F55]"
+                >۱,۰۰۰,۰۰۰ تومان تخفیف</span
+              >
+            </div>
+            <div
+              class="desktop:flex desktop:items-center desktop:justify-end desktop:mt-3 font-['Shabnam']"
+            >
+              <span class="desktop:text-xl desktop:font-bold text-[#0a5abd]">
+                ۸,۴۲۵,۰۰۰
+              </span>
+              <span class="desktop:text-xs desktop:mr-1 desktop:text-gray-500"
+                >تومان
+              </span>
+            </div>
+          </div>
+
+          <!-- 2nd column-->
+          <div
+            class="desktop:shadow desktop:rounded-xl desktop:bg-white desktop:border-l desktop:border-b border-gray-e2 desktop:p-4 desktop:cursor-pointer hover:shadow-xl desktop:h-full"
+          >
+            <img
+              src="./public/images/daily-offers/image-2.jpg"
+              alt=""
+              class="desktop:w-[285px] desktop:h-[285px]"
+            />
+            <p class="desktop:font-['Shabnam'] desktop:my-5 desktop:leading-8">
+              شارژر وایرلس رومیزی 3 کاره پاورولوژی مدل Powerology PWCUQC027
+            </p>
+            <div class="desktop:flex desktop:justify-between desktop:mt-28">
+              <span
+                class="desktop:font-['Shabnam'] desktop:text-[15px] desktop:text-[#8E8E8E] font-bold line-through"
+                >۲,۷۷۰,۰۰۰</span
+              >
+              <span
+                class="desktop:font-['Shabnam'] desktop:text-sm text-[#FE5F55]"
+                >۵۰۰,۰۰۰ تومان تخفیف
+              </span>
+            </div>
+            <div
+              class="desktop:flex desktop:items-center desktop:justify-end desktop:mt-3 font-['Shabnam']"
+            >
+              <span class="desktop:text-xl desktop:font-bold text-[#0a5abd]">
+                ۲,۲۷۰,۰۰۰
+              </span>
+              <span class="desktop:text-xs desktop:mr-1 desktop:text-gray-500"
+                >تومان
+              </span>
+            </div>
+          </div>
+
+          <!--3rd column-->
+          <div
+            class="desktop:flex desktop:flex-col desktop:justify-between desktop:gap-y-6"
+          >
+            <a
+              class="desktop:bg-white desktop:rounded-xl desktop:shadow hover:shadow-xl desktop:border-l desktop:border-b desktop:cursor-pointer"
+            >
+              <div
+                class="desktop:flex desktop:justify-between desktop:items-center desktop:flex-row desktop:gap-4"
+              >
+                <div class="relative">
+                  <img
+                    src="./public/images/daily-offers/image-3.jpg"
+                    class="desktop:w-40 desktop:h-40"
+                    alt=""
+                  />
+                </div>
+
+                <div
+                  class="desktop:flex desktop:flex-col desktop:flex-1 desktop:justify-between desktop:gap-2 desktop:p-3"
+                >
+                  <h3
+                    class="desktop:text-sm desktop:font-['Shabnam'] desktop:flex-1 desktop:leading-7"
+                  >
+                    پاوربانک 10000 میلی آمپری و استند وایرلس مگ سیف 2 کاره
+                    پاورولوژی مدل Powerlogy PPBCHA35
+                  </h3>
+                  <div class="desktop:flex desktop:flex-col desktop:gap-2">
+                    <div
+                      class="desktop:flex desktop:flex-row desktop:gap-2 desktop:justify-between font-['Shabnam']"
+                    >
+                      <span
+                        class="text-[#9E9E9E] desktop:font-bold desktop:line-through desktop:text-[15px]"
+                        >۲,۶۷۷,۰۰۰</span
+                      >
+                      <span class="desktop:text-sm desktop:text-[#E46C4C]"
+                        >۴۰۰,۰۰۰ تومان تخفیف</span
+                      >
+                    </div>
+                    <div
+                      class="desktop:flex desktop:flex-row desktop:items-center desktop:justify-end desktop:gap-1 font-['Shabnam']"
+                    >
+                      <span
+                        class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                        >۲,۲۷۷,۰۰۰</span
+                      >
+                      <span class="desktop:text-xs desktop:text-gray-500"
+                        >تومان</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a
+              class="desktop:bg-white desktop:rounded-xl desktop:shadow hover:shadow-xl desktop:border-l desktop:border-b desktop:cursor-pointer"
+            >
+              <div
+                class="desktop:flex desktop:justify-between desktop:items-center desktop:flex-row desktop:gap-3"
+              >
+                <div class="relative">
+                  <img
+                    src="./public/images/daily-offers/image-4.png"
+                    class="desktop:w-36 desktop:rounded-r-xl"
+                    alt=""
+                  />
+                </div>
+
+                <div
+                  class="desktop:flex desktop:flex-col desktop:flex-1 desktop:justify-between desktop:gap-6 desktop:p-3"
+                >
+                  <h3
+                    class="desktop:text-sm desktop:font-['Shabnam'] desktop:flex-1 desktop:leading-7"
+                  >
+                    پاوربانک مگ سیف و استند وایرلس شارژ پاورولوژی مدل Powerology
+                    ppbcha21gy
+                  </h3>
+                  <div class="desktop:flex desktop:flex-col desktop:gap-2">
+                    <div
+                      class="desktop:flex desktop:flex-row desktop:gap-2 desktop:justify-between font-['Shabnam']"
+                    >
+                      <span
+                        class="text-[#9E9E9E] desktop:font-bold desktop:line-through desktop:text-[15px]"
+                      >
+                        ۳,۰۲۰,۰۰۰
+                      </span>
+                      <span class="desktop:text-sm desktop:text-[#E46C4C]">
+                        ۳۷۰,۰۰۰ تومان تخفیف</span
+                      >
+                    </div>
+                    <div
+                      class="desktop:flex desktop:flex-row desktop:items-center desktop:justify-end desktop:gap-1 font-['Shabnam']"
+                    >
+                      <span
+                        class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                        >۲,۶۵۰,۰۰۰</span
+                      >
+                      <span class="desktop:text-xs desktop:text-gray-500"
+                        >تومان</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a
+              class="desktop:bg-white desktop:rounded-xl desktop:shadow hover:shadow-xl desktop:border-l desktop:border-b desktop:cursor-pointer desktop:flex-row"
+            >
+              <div
+                class="desktop:flex desktop:justify-between desktop:items-center desktop:flex-row desktop:gap-2"
+              >
+                <div class="relative">
+                  <img
+                    src="./public/images/daily-offers/image-5.jpg"
+                    class="desktop:w-40 desktop:mx-auto desktop:rounded-r-xl"
+                    alt=""
+                  />
+                </div>
+
+                <div
+                  class="desktop:flex desktop:flex-col desktop:flex-1 desktop:justify-between desktop:gap-5 desktop:p-3"
+                >
+                  <h3
+                    class="desktop:text-sm desktop:font-['Shabnam'] desktop:flex-1 desktop:leading-7 overflow-hidden"
+                  >
+                    کابل شارژ گیمینگ USB به لایتنینگ مک دودو 1.8 متر مدل Mcdodo
+                    6271
+                  </h3>
+                  <div class="desktop:flex desktop:flex-col desktop:gap-2">
+                    <div
+                      class="desktop:flex desktop:flex-row desktop:gap-2 desktop:justify-between font-['Shabnam']"
+                    >
+                      <span
+                        class="text-[#9E9E9E] desktop:font-bold desktop:line-through desktop:text-[15px]"
+                        >۲۴۸,۰۰۰</span
+                      >
+                      <span class="desktop:text-sm desktop:text-[#E46C4C]"
+                        >۷۹,۰۰۰ تومان تخفیف</span
+                      >
+                    </div>
+                    <div
+                      class="desktop:flex desktop:flex-row desktop:items-center desktop:justify-end desktop:gap-1 font-['Shabnam']"
+                    >
+                      <span
+                        class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                        >۱۶۹,۰۰۰</span
+                      >
+                      <span class="desktop:text-xs desktop:text-gray-500"
+                        >تومان</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--mobile daily offers-->
+    <div class="mobile:w-full bg-[#E2E2E2] mobile:mt-8 pb-5 desktop:hidden">
+      <!--heading-->
+      <div
+        class="mobile:flex mobile:justify-center mobile:items-center mobile:py-5 mobile:gap-2"
+      >
+        <img
+          src="./public/images/daily-offers/percentage.png"
+          alt=""
+          class="mobile:w-6"
+        />
+        <h1
+          class="font-['Shabnam'] mobile:text-[24px] mobile:text-[#757575] font-bold"
+        >
+          تخفیف‌های روزانه دسترسی
+        </h1>
+      </div>
+
+      <div class="flex flex-col gap-6 px-4">
+        <!--1st-->
+        <div
+          class="shadow rounded-xl bg-white border-l border-b p-3 flex gap-6"
+        >
+          <img
+            src="./public/images/daily-offers/image-1.jpg"
+            alt=""
+            class="mobile:w-40 mobile:h-40"
+          />
+
+          <div class="flex flex-col gap-3 font-['Shabnam']">
+            <p class="text-sm leading-6">
+              میکروفون یقه ای بی‌سیم بویا 4 مخاطب لایتنینگ مدل Boya BY-V4D
+            </p>
+            <div class="flex gap-4">
+              <span
+                class="font-['Shabnam'] text-[15px] text-[#8E8E8E] font-bold line-through"
+                >۹,۴۲۵,۰۰۰</span
+              >
+              <span class="font-['Shabnam'] text-sm text-[#FE5F55] text-center"
+                >۱,۰۰۰,۰۰۰ تومان تخفیف</span
+              >
+            </div>
+            <div class="flex items-center justify-end mt-3 font-['Shabnam']">
+              <span class="text-xl font-bold text-[#0a5abd]"> ۸,۴۲۵,۰۰۰ </span>
+              <span class="text-xs mr-1 text-gray-500">تومان </span>
+            </div>
+          </div>
+        </div>
+
+        <!--2nd-->
+        <div
+          class="shadow rounded-xl bg-white border-l border-b p-3 flex gap-6"
+        >
+          <img
+            src="./public/images/daily-offers/image-2.jpg"
+            alt=""
+            class="mobile:w-40 mobile:h-40"
+          />
+
+          <div class="flex flex-col gap-3 font-['Shabnam']">
+            <p class="text-sm leading-6">
+              شارژر وایرلس رومیزی 3 کاره پاورولوژی مدل Powerology PWCUQC027
+            </p>
+            <div class="flex gap-4">
+              <span
+                class="font-['Shabnam'] text-[15px] text-[#8E8E8E] font-bold line-through"
+                >۲,۷۷۰,۰۰۰</span
+              >
+              <span class="font-['Shabnam'] text-sm text-[#FE5F55] text-center"
+                >۵۰۰,۰۰۰ تومان تخفیف</span
+              >
+            </div>
+            <div class="flex items-center justify-end mt-3 font-['Shabnam']">
+              <span class="text-xl font-bold text-[#0a5abd]"> ۲,۲۷۰,۰۰۰ </span>
+              <span class="text-xs mr-1 text-gray-500">تومان </span>
+            </div>
+          </div>
+        </div>
+
+        <!--3rd-->
+        <div
+          class="shadow rounded-xl bg-white border-l border-b p-3 flex gap-6"
+        >
+          <img
+            src="./public/images/daily-offers/image-3.jpg"
+            alt=""
+            class="mobile:w-40 mobile:h-40"
+          />
+
+          <div class="flex flex-col gap-3 font-['Shabnam']">
+            <p class="text-sm leading-6">
+              پاوربانک 10000 میلی آمپری و استند وایرلس مگ سیف 2 کاره پاورولوژی
+              مدل Powerlogy PPBCHA35
+            </p>
+            <div class="flex gap-4">
+              <span
+                class="font-['Shabnam'] text-[15px] text-[#8E8E8E] font-bold line-through"
+                >۲,۶۷۷,۰۰۰</span
+              >
+              <span class="font-['Shabnam'] text-sm text-[#FE5F55] text-center"
+                >۴۰۰,۰۰۰ تومان تخفیف</span
+              >
+            </div>
+            <div class="flex items-center justify-end mt-3 font-['Shabnam']">
+              <span class="text-xl font-bold text-[#0a5abd]"> ۲,۲۷۷,۰۰۰ </span>
+              <span class="text-xs mr-1 text-gray-500">تومان </span>
+            </div>
+          </div>
+        </div>
+
+        <!--4th-->
+        <div
+          class="shadow rounded-xl bg-white border-l border-b p-3 flex gap-6"
+        >
+          <img
+            src="./public/images/daily-offers/image-4.png"
+            alt=""
+            class="mobile:w-40 mobile:h-40"
+          />
+
+          <div class="flex flex-col gap-3 font-['Shabnam']">
+            <p class="text-sm leading-6">
+              پاوربانک مگ سیف و استند وایرلس شارژ پاورولوژی مدل Powerology
+              ppbcha21gy
+            </p>
+            <div class="flex gap-4">
+              <span
+                class="font-['Shabnam'] text-[15px] text-[#8E8E8E] font-bold line-through"
+                >۳,۰۲۰,۰۰۰</span
+              >
+              <span class="font-['Shabnam'] text-sm text-[#FE5F55] text-center"
+                >۳۷۰,۰۰۰ تومان تخفیف</span
+              >
+            </div>
+            <div class="flex items-center justify-end mt-3 font-['Shabnam']">
+              <span class="text-xl font-bold text-[#0a5abd]"> ۲,۶۵۰,۰۰۰ </span>
+              <span class="text-xs mr-1 text-gray-500">تومان </span>
+            </div>
+          </div>
+        </div>
+
+        <!--5th-->
+        <div
+          class="shadow rounded-xl bg-white border-l border-b p-3 flex gap-6"
+        >
+          <img
+            src="./public/images/daily-offers/image-5.jpg"
+            alt=""
+            class="mobile:w-40 mobile:h-40"
+          />
+
+          <div class="flex flex-col gap-3 font-['Shabnam']">
+            <p class="text-sm leading-6">
+              کابل شارژ گیمینگ USB به لایتنینگ مک دودو 1.8 متر مدل Mcdodo 6271
+            </p>
+            <div class="flex gap-4">
+              <span
+                class="font-['Shabnam'] text-[15px] text-[#8E8E8E] font-bold line-through"
+                >۲۴۸,۰۰۰</span
+              >
+              <span class="font-['Shabnam'] text-sm text-[#FE5F55] text-center"
+                >۷۹,۰۰۰ تومان تخفیف</span
+              >
+            </div>
+            <div class="flex items-center justify-end mt-3 font-['Shabnam']">
+              <span class="text-xl font-bold text-[#0a5abd]"> ۱۶۹,۰۰۰</span>
+              <span class="text-xs mr-1 text-gray-500">تومان </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--categories-->
+    <div class="desktop:mt-12">
+      <!--heading-->
+      <h1
+        class="font-['Shabnam'] text-2xl text-center font-bold desktop:mb-4 mobile:mt-10 mobile:mb-5"
+      >
+        دسته‌بندی‌های منتخب
+      </h1>
+      <!--end heading-->
+      <div class="desktop:w-[95%] desktop:mx-auto hidden desktop:block">
+        <!-- swiper -->
+        <div class="swiper mycategories">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide cursor-pointer">
+              <img
+                src="./public/images/categories/image-1.png"
+                alt=""
+                class="categories"
+              />
+            </div>
+            <div class="swiper-slide cursor-pointer">
+              <img
+                src="./public/images/categories/image-2.png"
+                alt=""
+                class="categories"
+              />
+            </div>
+            <div class="swiper-slide cursor-pointer">
+              <img
+                src="./public/images/categories/image-3.png"
+                alt=""
+                class="categories"
+              />
+            </div>
+            <div class="swiper-slide cursor-pointer">
+              <img
+                src="./public/images/categories/image-4.png"
+                alt=""
+                class="categories"
+              />
+            </div>
+            <div class="swiper-slide cursor-pointer">
+              <img
+                src="./public/images/categories/image-5.png"
+                alt=""
+                class="categories"
+              />
+            </div>
+            <div class="swiper-slide cursor-pointer">
+              <img
+                src="./public/images/categories/image-6.png"
+                alt=""
+                class="categories"
+              />
+            </div>
+            <div class="swiper-slide cursor-pointer">
+              <img
+                src="./public/images/categories/image-7.png"
+                alt=""
+                class="categories"
+              />
+            </div>
+            <div class="swiper-slide cursor-pointer">
+              <img
+                src="./public/images/categories/image-8.png"
+                alt=""
+                class="categories"
+              />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+
+      <div
+        class="mobile:grid mobile:grid-cols-2 md:grid-cols-3 mobile:gap-1 mobile:flex-wrap mobile:flex-row md:hidden mobile:items-center mobile:text-center"
+      >
+        <a
+          href="#"
+          class="mobile:flex mobile:flex-col mobile:justify-center mobile:items-center mobile:w-full"
+        >
+          <img
+            src="./public/images/categories/image-2.png"
+            alt=""
+            class="mobile:w-[160px] mobile:h-[160px]"
+          />
+        </a>
+        <a
+          href="#"
+          class="mobile:flex mobile:flex-col mobile:justify-center mobile:items-center mobile:w-full"
+        >
+          <img
+            src="./public/images/categories/image-3.png"
+            alt=""
+            class="mobile:w-[160px] mobile:h-[160px]"
+          />
+        </a>
+        <a
+          href="#"
+          class="mobile:flex mobile:flex-col mobile:justify-center mobile:items-center mobile:w-full"
+        >
+          <img
+            src="./public/images/categories/image-4.png"
+            alt=""
+            class="mobile:w-[160px] mobile:h-[160px]"
+          />
+        </a>
+        <a
+          href="#"
+          class="mobile:flex mobile:flex-col mobile:justify-center mobile:items-center mobile:w-full"
+        >
+          <img
+            src="./public/images/categories/image-5.png"
+            alt=""
+            class="mobile:w-[160px] mobile:h-[160px]"
+          />
+        </a>
+        <a
+          href="#"
+          class="mobile:flex mobile:flex-col mobile:justify-center mobile:items-center mobile:w-full"
+        >
+          <img
+            src="./public/images/categories/image-6.png"
+            alt=""
+            class="mobile:w-[160px] mobile:h-[160px]"
+          />
+        </a>
+        <a
+          href="#"
+          class="mobile:flex mobile:flex-col mobile:justify-center mobile:items-center mobile:w-full"
+        >
+          <img
+            src="./public/images/categories/image-7.png"
+            alt=""
+            class="mobile:w-[160px] mobile:h-[160px]"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!--desktop available-->
+    <div
+      class="desktop:mt-14 desktop:flex desktop:justify-center desktop:items-center mobile:hidden"
+    >
+      <div
+        class="desktop:w-[95%] desktop:bg-[#E2E2E2] desktop:rounded-xl desktop:pb-10 desktop:px-10"
+      >
+        <!--heading-->
+        <div
+          class="desktop:flex desktop:justify-between desktop:py-8 font-['Shabnam']"
+        >
+          <h1 class="desktop:text-2xl desktop:font-bold desktop:text-[#757575]">
+            همین الان موجود شد...
+          </h1>
+          <a
+            href="#"
+            class="desktop:text-sm desktop:text-[#4e5e60] desktop:flex desktop:gap-2 desktop:items-center"
+            >مشاهده همه محصولات
+            <img
+              src="./public/images/available/more.png"
+              alt="more"
+              class="desktop:w-4 desktop:h-4"
+            />
+          </a>
+        </div>
+        <!--end heading-->
+
+        <div class="available">
+          <!-- swiper -->
+          <div class="swiper myavailable">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide desktop:shadow desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-black desktop:border-black"
+                    ></span>
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-blue-700 desktop:border-blue-700"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/available/image-1.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    هندزفری بلوتوث دو گوش
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    کاور سیلیکونی هندزفری بلوتوثی
+                  </p>
+                  <div
+                    class="desktop:flex desktop:justify-end desktop:items-center desktop:px-3 font-['Shabnam'] desktop:gap-1 desktop:pb-2 desktop:mt-8"
+                  >
+                    <span
+                      class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                      >۱۲۵,۰۰۰
+                    </span>
+                    <span class="desktop:text-xs desktop:text-gray-500"
+                      >تومان</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-blue-700 desktop:border-blue-700"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/available/image-2.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    انواع گجت های جذاب
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    جویسر قابل حمل مدل Juicer ZZJ08
+                  </p>
+                  <div
+                    class="desktop:w-full desktop:h-[60px] desktop:bg-[#FFF5F5] desktop:flex desktop:justify-center desktop:items-center desktop:border-t desktop:border-t-gray-200 desktop:rounded-b-xl desktop:mt-2"
+                  >
+                    <span
+                      class="desktop:font-['Shabnam'] desktop:text-[#9b2c2c] desktop:text-sm"
+                      >ناموجود</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-[#007300] desktop:border-[#007300]"
+                    ></span>
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-[#E5ACB6] desktop:border-[#E5ACB6]"
+                    ></span>
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-white desktop:border-gray-200"
+                    ></span>
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-[#e5e500] desktop:border-[#e5e500]"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/available/image-3.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    انواع گجت های جذاب
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    دستگاه بخور سرد مدل W5000
+                  </p>
+                  <div
+                    class="desktop:flex desktop:justify-end desktop:items-center desktop:px-3 font-['Shabnam'] desktop:gap-1 desktop:pb-2 desktop:mt-8"
+                  >
+                    <span
+                      class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                      >۳۵۰,۰۰۰
+                    </span>
+                    <span class="desktop:text-xs desktop:text-gray-500"
+                      >تومان</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-black desktop:border-black"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/available/image-4.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    انواع گجت های جذاب
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    پاوربانک خورشیدی 1600 میلی آمپر 4
+                  </p>
+                  <div
+                    class="desktop:flex desktop:justify-end desktop:items-center desktop:px-3 font-['Shabnam'] desktop:gap-1 desktop:pb-2 desktop:mt-8"
+                  >
+                    <span
+                      class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                      >۳,۷۴۸,۰۰۰
+                    </span>
+                    <span class="desktop:text-xs desktop:text-gray-500"
+                      >تومان</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-black desktop:border-black"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/available/image-5.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    کابل - مبدل - رابط
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    کابل تبدیل مادگی TRS به لایتنینگ
+                  </p>
+                  <div
+                    class="desktop:flex desktop:justify-end desktop:items-center desktop:px-3 font-['Shabnam'] desktop:gap-1 desktop:pb-2 desktop:mt-8"
+                  >
+                    <span
+                      class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                      >۴۹۰,۰۰۰
+                    </span>
+                    <span class="desktop:text-xs desktop:text-gray-500"
+                      >تومان</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-black desktop:border-black"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/available/image-6.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    کابل - مبدل - رابط
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    کابل تبدیل مادگی TRS به Type C
+                  </p>
+                  <div
+                    class="desktop:flex desktop:justify-end desktop:items-center desktop:px-3 font-['Shabnam'] desktop:gap-1 desktop:pb-2 desktop:mt-8"
+                  >
+                    <span
+                      class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                      >۸۸۰,۰۰۰
+                    </span>
+                    <span class="desktop:text-xs desktop:text-gray-500"
+                      >تومان</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-gray-400 desktop:border-gray-400"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/available/image-7.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    کابل - مبدل - رابط
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    پاورژنراتور 150 واتی مینی
+                  </p>
+                  <div
+                    class="desktop:w-full desktop:h-[60px] desktop:bg-[#FFF5F5] desktop:flex desktop:justify-center desktop:items-center desktop:border-t desktop:border-t-gray-200 desktop:rounded-b-xl desktop:mt-2"
+                  >
+                    <span
+                      class="desktop:font-['Shabnam'] desktop:text-[#9b2c2c] desktop:text-sm"
+                      >ناموجود</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-black desktop:border-black"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/available/image-8.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    شارژر وایرلس
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    پد وایرلس شارژ 3 کاره بیسوس
+                  </p>
+                  <div
+                    class="desktop:flex desktop:justify-end desktop:items-center desktop:px-3 font-['Shabnam'] desktop:gap-1 desktop:pb-2 desktop:mt-8"
+                  >
+                    <span
+                      class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                      >۳,۱۲۸,۰۰۰
+                    </span>
+                    <span class="desktop:text-xs desktop:text-gray-500"
+                      >تومان</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-black desktop:border-black"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/available/image-9.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    پاوربانک و جامپ استارتر
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    پاوربانک و چراغ قوه 10000 میلی‌آمپر
+                  </p>
+                  <div
+                    class="desktop:flex desktop:justify-end desktop:items-center desktop:px-3 font-['Shabnam'] desktop:gap-1 desktop:pb-2 desktop:mt-8"
+                  >
+                    <span
+                      class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                      >۱,۲۹۰,۰۰۰
+                    </span>
+                    <span class="desktop:text-xs desktop:text-gray-500"
+                      >تومان</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-white desktop:border-gray-300"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/available/image-10.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    لوازم خانگی و شخصی
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    ظرف آب حیوانات خانگی Anker eufy
+                  </p>
+                  <div
+                    class="desktop:flex desktop:justify-end desktop:items-center desktop:px-3 font-['Shabnam'] desktop:gap-1 desktop:pb-2 desktop:mt-8"
+                  >
+                    <span
+                      class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                      >۵,۶۹۵,۰۰۰
+                    </span>
+                    <span class="desktop:text-xs desktop:text-gray-500"
+                      >تومان</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-white desktop:border-gray-300"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/available/image-11.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    هولدر و نگهدارنده
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    هولدر رومیزی پاورولوژی مدل PLSPH
+                  </p>
+                  <div
+                    class="desktop:flex desktop:justify-end desktop:items-center desktop:px-3 font-['Shabnam'] desktop:gap-1 desktop:pb-2 desktop:mt-8"
+                  >
+                    <span
+                      class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                      >۲,۰۶۰,۰۰۰
+                    </span>
+                    <span class="desktop:text-xs desktop:text-gray-500"
+                      >تومان</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--mobile available-->
+    <div
+      class="mobile:max-w-screen-lg mobile:bg-[#E2E2E2] mobile:my-7 mobile:px-4 mobile:pb-5 desktop:hidden"
+    >
+      <!--heading-->
+      <div
+        class="mobile:flex mobile:items-center mobile:justify-between mobile:py-5"
+      >
+        <h1
+          class="mobile:font-['Shabnam'] mobile:text-[22px] mobile:text-[#757575] mobile:font-bold"
+        >
+          همین الان موجود شد...
+        </h1>
+        <img
+          src="./public/images/available/more.png"
+          alt="more"
+          class="mobile:w-4"
+        />
+      </div>
+      <!--Swiper-->
+      <div class="swiper myAvailableMobile">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide shadow rounded-xl">
+            <a href="#" class="rounded-xl block font-['Shabnam'] bg-white">
+              <img
+                src="./public/images/available/image-1.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p class="text-xs text-gray-400 mt-4 text-center">
+                هندزفری بلوتوث دو گوش
+              </p>
+              <p class="text-sm mt-4 text-center px-3">
+                کاور سیلیکونی هندزفری بلوتوثی
+              </p>
+              <div
+                class="flex justify-end items-center px-3 font-['Shabnam'] gap-1 pb-2 mt-8"
+              >
+                <span class="text-lg text-[#0a5abd] font-bold">۱۲۵,۰۰۰ </span>
+                <span class="text-xs text-gray-500">تومان</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide shadow-sm rounded-xl">
+            <a href="#" class="rounded-xl block font-['Shabnam'] bg-white">
+              <img
+                src="./public/images/available/image-2.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p class="text-xs text-gray-400 mt-4 text-center">
+                انواع گجت های جذاب
+              </p>
+              <p class="text-sm mt-4 text-center px-3">
+                جویسر قابل حمل مدل Juicer ZZJ08
+              </p>
+              <div
+                class="w-full h-[60px] bg-[#FFF5F5] flex justify-center items-center border-t border-t-gray-200 rounded-b-xl mt-2"
+              >
+                <span class="font-['Shabnam'] text-[#9b2c2c] text-sm"
+                  >ناموجود</span
+                >
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide shadow-sm rounded-xl">
+            <a href="#" class="rounded-xl block font-['Shabnam'] bg-white">
+              <img
+                src="./public/images/available/image-3.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p class="text-xs text-gray-400 mt-4 text-center">
+                انواع گجت های جذاب
+              </p>
+              <p class="text-sm mt-4 text-center px-2">
+                دستگاه بخور سرد مدل W5000
+              </p>
+              <div
+                class="flex justify-end items-center px-3 font-['Shabnam'] gap-1 pb-2 mt-8"
+              >
+                <span class="text-lg text-[#0a5abd] font-bold">۳۵۰,۰۰۰ </span>
+                <span class="text-xs text-gray-500">تومان</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide shadow-sm rounded-xl">
+            <a href="#" class="rounded-xl block font-['Shabnam'] bg-white">
+              <img
+                src="./public/images/available/image-4.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p class="text-xs text-gray-400 mt-4 text-center">
+                انواع گجت های جذاب
+              </p>
+              <p class="text-sm mt-4 text-center px-2">
+                پاوربانک خورشیدی 1600 میلی آمپر 4
+              </p>
+              <div
+                class="flex justify-end items-center px-3 font-['Shabnam'] gap-1 pb-2 mt-8"
+              >
+                <span class="text-lg text-[#0a5abd] font-bold">۳,۷۴۸,۰۰۰ </span>
+                <span class="text-xs text-gray-500">تومان</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide shadow-sm rounded-xl">
+            <a href="#" class="rounded-xl block font-['Shabnam'] bg-white">
+              <img
+                src="./public/images/available/image-5.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p class="text-xs text-gray-400 mt-4 text-center">
+                کابل - مبدل - رابط
+              </p>
+              <p class="text-sm mt-4 text-center">
+                کابل تبدیل مادگی TRS به لایتنینگ
+              </p>
+              <div
+                class="flex justify-end items-center px-3 font-['Shabnam'] gap-1 pb-2 mt-8"
+              >
+                <span class="text-lg text-[#0a5abd] font-bold">۴۹۰,۰۰۰ </span>
+                <span class="text-xs text-gray-500">تومان</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide shadow-sm rounded-xl">
+            <a href="#" class="rounded-xl block font-['Shabnam'] bg-white">
+              <img
+                src="./public/images/available/image-6.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p class="text-xs text-gray-400 mt-4 text-center">
+                کابل - مبدل - رابط
+              </p>
+              <p class="text-sm mt-4 text-center px-2">
+                کابل تبدیل مادگی TRS به Type C
+              </p>
+              <div
+                class="flex justify-end items-center px-3 font-['Shabnam'] gap-1 pb-2 mt-8"
+              >
+                <span class="text-lg text-[#0a5abd] font-bold">۸۸۰,۰۰۰ </span>
+                <span class="text-xs text-gray-500">تومان</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide shadow-sm rounded-xl">
+            <a href="#" class="rounded-xl block font-['Shabnam'] bg-white">
+              <img
+                src="./public/images/available/image-7.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p class="text-xs text-gray-400 mt-4 text-center">
+                کابل - مبدل - رابط
+              </p>
+              <p class="text-sm mt-4 text-center">پاورژنراتور 150 واتی مینی</p>
+              <div
+                class="w-full h-[60px] bg-[#FFF5F5] flex justify-center items-center border-t border-t-gray-200 rounded-b-xl mt-7"
+              >
+                <span class="font-['Shabnam'] text-[#9b2c2c] text-sm"
+                  >ناموجود</span
+                >
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide shadow-sm rounded-xl">
+            <a href="#" class="rounded-xl block font-['Shabnam'] bg-white">
+              <img
+                src="./public/images/available/image-8.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p class="text-xs text-gray-400 mt-4 text-center">شارژر وایرلس</p>
+              <p class="text-sm mt-4 text-center px-4">
+                پد وایرلس شارژ 3 کاره بیسوس
+              </p>
+              <div
+                class="flex justify-end items-center px-3 font-['Shabnam'] gap-1 pb-2 mt-8"
+              >
+                <span class="text-lg text-[#0a5abd] font-bold">۳,۱۲۸,۰۰۰ </span>
+                <span class="text-xs text-gray-500">تومان</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide shadow-sm rounded-xl">
+            <a href="#" class="rounded-xl block font-['Shabnam'] bg-white">
+              <img
+                src="./public/images/available/image-9.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p class="text-xs text-gray-400 mt-4 text-center">
+                پاوربانک و جامپ استارتر
+              </p>
+              <p class="text-sm mt-4 text-center">
+                پاوربانک و چراغ قوه 10000 میلی‌آمپر
+              </p>
+              <div
+                class="flex justify-end items-center px-3 font-['Shabnam'] gap-1 pb-2 mt-8"
+              >
+                <span class="text-lg text-[#0a5abd] font-bold">۱,۲۹۰,۰۰۰ </span>
+                <span class="text-xs text-gray-500">تومان</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide shadow-sm rounded-xl">
+            <a href="#" class="rounded-xl block font-['Shabnam'] bg-white">
+              <img
+                src="./public/images/available/image-10.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p class="text-xs text-gray-400 mt-4 text-center">
+                لوازم خانگی و شخصی
+              </p>
+              <p class="text-sm mt-4 text-center px-1">
+                ظرف آب حیوانات خانگی Anker eufy
+              </p>
+              <div
+                class="flex justify-end items-center px-3 font-['Shabnam'] gap-1 pb-2 mt-8"
+              >
+                <span class="text-lg text-[#0a5abd] font-bold">۵,۶۹۵,۰۰۰ </span>
+                <span class="text-xs text-gray-500">تومان</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide shadow-sm rounded-xl">
+            <a href="#" class="rounded-xl block font-['Shabnam'] bg-white">
+              <img
+                src="./public/images/available/image-11.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p class="text-xs text-gray-400 mt-4 text-center">
+                هولدر و نگهدارنده
+              </p>
+              <p class="text-sm mt-4 text-center">
+                هولدر رومیزی پاورولوژی مدل PLSPH
+              </p>
+              <div
+                class="flex justify-end items-center px-3 font-['Shabnam'] gap-1 pb-2 mt-8"
+              >
+                <span class="text-lg text-[#0a5abd] font-bold">۲,۰۶۰,۰۰۰ </span>
+                <span class="text-xs text-gray-500">تومان</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <!--why dastresi-->
+    <div
+      class="desktop:max-w-screen-xl desktop:mt-8 desktop:items-center desktop:mx-auto desktop:block hidden"
+    >
+      <div class="desktop:font-['Shabnam']">
+        <!--heading-->
+        <h3
+          class="desktop:text-2xl desktop:text-center desktop:font-bold desktop:mb-8"
+        >
+          چرا دسترسی رو برای خرید انتخاب کنیم؟
+        </h3>
+
+        <div
+          class="desktop:w-full desktop:flex desktop:justify-center desktop:items-center"
+        >
+          <div class="why-dastresi">
+            <img
+              src="./public/images/why-dastresi/image-1.png"
+              alt=""
+              class="desktop:w-16 desktop:mb-2"
+            />
+            <p
+              class="desktop:text-center desktop:font-bold desktop:text-gray-500 desktop:mb-2"
+            >
+              مشاوره تخصصی برای خرید محصول
+            </p>
+            <p class="desktop:text-center desktop:text-sm desktop:leading-7">
+              برای خرید هر محصول با تیم دسترسی در ارتباط باشید تا بهترین انتخاب
+              رو انجام دهید.
+            </p>
+          </div>
+
+          <div class="why-dastresi">
+            <img
+              src="./public/images/why-dastresi/image-2.png"
+              alt=""
+              class="desktop:w-16 desktop:mb-2"
+            />
+            <p
+              class="desktop:text-center desktop:font-bold desktop:text-gray-500 desktop:mb-2"
+            >
+              قیمت مناسب با بالاترین کیفیت
+            </p>
+            <p class="desktop:text-center desktop:text-sm desktop:leading-7">
+              برای خرید هر گروه دسترسی در تلاش است که کالای با کیفیت را با
+              مناسب‌ترین قیمت به دست شما برساند.
+            </p>
+          </div>
+
+          <div class="why-dastresi">
+            <img
+              src="./public/images/why-dastresi/image-3.png"
+              alt=""
+              class="desktop:w-16 desktop:mb-2"
+            />
+            <p
+              class="desktop:text-center desktop:font-bold desktop:text-gray-500 desktop:mb-2"
+            >
+              ارسال سریع
+            </p>
+            <p class="desktop:text-center desktop:text-sm desktop:leading-7">
+              برای خرید هر ارسال از طریق تیپاکس، پست پیشتاز و پیک موتوری (ویژه
+              تهران) صورت می‌گیرد.
+            </p>
+          </div>
+
+          <div class="why-dastresi">
+            <img
+              src="./public/images/why-dastresi/image-4.png"
+              alt=""
+              class="desktop:w-16 desktop:mb-2"
+            />
+            <p
+              class="desktop:text-center desktop:font-bold desktop:text-gray-500 desktop:mb-2"
+            >
+              امکان خرید حضوری
+            </p>
+            <p class="desktop:text-center desktop:text-sm desktop:leading-7">
+              برای خرید حضوری هر مشتری گرامی می‌توانید به آدرس مندرج در پایین
+              سایت مراجعه نمایید.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--desktop bestsellers-->
+    <div
+      class="desktop:mt-14 desktop:flex desktop:justify-center desktop:items-center mobile:hidden"
+    >
+      <div
+        class="desktop:w-[95%] desktop:bg-[#E2E2E2] desktop:rounded-xl desktop:pb-10 desktop:px-10"
+      >
+        <!--heading-->
+        <div
+          class="desktop:flex desktop:justify-between desktop:py-8 font-['Shabnam']"
+        >
+          <h1 class="desktop:text-2xl desktop:font-bold desktop:text-[#757575]">
+            پرفروش‌ترین‌ محصولات
+          </h1>
+          <a
+            href="#"
+            class="desktop:text-sm desktop:text-[#4e5e60] desktop:flex desktop:gap-2 desktop:items-center"
+            >مشاهده همه محصولات
+            <img
+              src="./public/images/available/more.png"
+              alt="more"
+              class="desktop:w-4 desktop:h-4"
+            />
+          </a>
+        </div>
+        <!--end heading-->
+        <div class="bestsellers">
+          <!-- swiper -->
+          <div class="swiper myavailable">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide desktop:shadow desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-black desktop:border-black"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/bestsellers/image-1.jpg"
+                    alt=""
+                    class="rounded-t-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    دو سر تایپ سی
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    کابل شارژ دوسر تایپ سی 1.8 متری
+                  </p>
+                  <div
+                    class="desktop:flex desktop:justify-end desktop:items-center desktop:px-3 font-['Shabnam'] desktop:gap-1 desktop:pb-2 desktop:mt-8"
+                  >
+                    <span
+                      class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                      >۵۴۵,۰۰۰
+                    </span>
+                    <span class="desktop:text-xs desktop:text-gray-500"
+                      >تومان</span
+                    >
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-blue-700 desktop:border-blue-700"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/bestsellers/image-2.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    باتری آلکالاین
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    باتری نیم قلم 10 تایی شیائومی
+                  </p>
+                  <div
+                    class="desktop:flex desktop:justify-end desktop:items-center desktop:px-3 font-['Shabnam'] desktop:gap-1 desktop:pb-2 desktop:mt-8"
+                  >
+                    <span
+                      class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                      >۱۸۹,۰۰۰
+                    </span>
+                    <span class="desktop:text-xs desktop:text-gray-500"
+                      >تومان</span
+                    >
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-blue-700 desktop:border-blue-700"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/bestsellers/image-3.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    انواع گجت های جذاب
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    باتری قلمی 10تایی شیائومی مدل Xiao
+                  </p>
+                  <div
+                    class="desktop:flex desktop:justify-end desktop:items-center desktop:px-3 font-['Shabnam'] desktop:gap-1 desktop:pb-2 desktop:mt-8"
+                  >
+                    <span
+                      class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                      >۱۸۹,۰۰۰
+                    </span>
+                    <span class="desktop:text-xs desktop:text-gray-500"
+                      >تومان</span
+                    >
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-black desktop:border-black"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/bestsellers/image-4.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    ماوس و کیبورد و پدموس
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    کیبورد بلوتوثی مافی مدل Mofii Phoe
+                  </p>
+                  <div
+                    class="desktop:flex desktop:justify-end desktop:items-center desktop:px-3 font-['Shabnam'] desktop:gap-1 desktop:pb-2 desktop:mt-8"
+                  >
+                    <span
+                      class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                      >۲,۵۹۰,۰۰۰
+                    </span>
+                    <span class="desktop:text-xs desktop:text-gray-500"
+                      >تومان</span
+                    >
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-gray-500 desktop:border-gray-500"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/bestsellers/image-5.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    پاوربانک و جامپ استارتر
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    جامپ استارتر و پمپ باد پاورولوژی
+                  </p>
+                  <div
+                    class="desktop:flex desktop:justify-end desktop:items-center desktop:px-3 font-['Shabnam'] desktop:gap-1 desktop:pb-2 desktop:mt-8"
+                  >
+                    <span
+                      class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                      >۶,۷۹۵,۰۰۰
+                    </span>
+                    <span class="desktop:text-xs desktop:text-gray-500"
+                      >تومان</span
+                    >
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-black desktop:border-black"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/bestsellers/image-6.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    شارژر رومیزی
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    شارژر رومیزی وایرلس مگ سیف موفی
+                  </p>
+                  <div
+                    class="desktop:flex desktop:justify-end desktop:items-center desktop:px-3 font-['Shabnam'] desktop:gap-1 desktop:pb-2 desktop:mt-8"
+                  >
+                    <span
+                      class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                      >۲,۲۰۰,۰۰۰
+                    </span>
+                    <span class="desktop:text-xs desktop:text-gray-500"
+                      >تومان</span
+                    >
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-black desktop:border-black"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/bestsellers/image-7.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    پاوربانک و جامپ استارتر
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    شارژر دیواری و پاوربانک وایرلس 100
+                  </p>
+                  <div
+                    class="desktop:flex desktop:justify-end desktop:items-center desktop:px-3 font-['Shabnam'] desktop:gap-1 desktop:pb-2 desktop:mt-8"
+                  >
+                    <span
+                      class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                      >۳,۱۵۰,۰۰۰
+                    </span>
+                    <span class="desktop:text-xs desktop:text-gray-500"
+                      >تومان</span
+                    >
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-black desktop:border-black"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/bestsellers/image-8.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    رینگ لایت و پایه
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    رینگ لایت 18 اینچ 100 واتی هارمونی
+                  </p>
+                  <div
+                    class="desktop:flex desktop:justify-end desktop:items-center desktop:px-3 font-['Shabnam'] desktop:gap-1 desktop:pb-2 desktop:mt-8"
+                  >
+                    <span
+                      class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                      >۳,۴۹۰,۰۰۰
+                    </span>
+                    <span class="desktop:text-xs desktop:text-gray-500"
+                      >تومان</span
+                    >
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-black desktop:border-black"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/bestsellers/image-9.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    هندزفری بلوتوث دو گوش
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    هندزفری بلوتوثی ورزشی القایی پاورولوژی
+                  </p>
+                  <div
+                    class="desktop:flex desktop:justify-end desktop:items-center desktop:px-3 font-['Shabnam'] desktop:gap-1 desktop:pb-2 desktop:mt-8"
+                  >
+                    <span
+                      class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                      >۲,۳۹۵,۰۰۰
+                    </span>
+                    <span class="desktop:text-xs desktop:text-gray-500"
+                      >تومان</span
+                    >
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-black desktop:border-black"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/bestsellers/image-10.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    شارژر دیواری
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    شارژر دیواری گان 100 واتی الدینیو
+                  </p>
+                  <div
+                    class="desktop:flex desktop:justify-end desktop:items-center desktop:px-3 font-['Shabnam'] desktop:gap-1 desktop:pb-2 desktop:mt-8"
+                  >
+                    <span
+                      class="desktop:text-xl desktop:text-[#0a5abd] desktop:font-bold"
+                      >۱,۷۹۷,۰۰۰
+                    </span>
+                    <span class="desktop:text-xs desktop:text-gray-500"
+                      >تومان</span
+                    >
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide desktop:shadow-sm desktop:rounded-xl">
+                <a
+                  href="#"
+                  class="desktop:rounded-xl desktop:block desktop:font-['Shabnam'] relative desktop:bg-white"
+                >
+                  <div
+                    class="absolute desktop:flex desktop:flex-col desktop:left-3 desktop:top-3"
+                  >
+                    <span
+                      class="desktop:w-3 desktop:h-3 desktop:m-1 desktop:rounded-full desktop:border desktop:bg-white desktop:border-gray-300"
+                    ></span>
+                  </div>
+                  <img
+                    src="./public/images/bestsellers/image-11.jpg"
+                    alt=""
+                    class="rounded-2xl"
+                  />
+                  <p
+                    class="desktop:text-xs desktop:text-gray-400 desktop:mt-4 desktop:text-center"
+                  >
+                    انواع گجت های جذاب
+                  </p>
+                  <p
+                    class="desktop:text-sm desktop:mt-4 desktop:hover:text-[#0a5abd] desktop:text-center"
+                  >
+                    شارژر رومیزی وایرلس و چراغ رومیزی
+                  </p>
+                  <div
+                    class="desktop:w-full desktop:h-[60px] desktop:bg-[#FFF5F5] desktop:flex desktop:justify-center desktop:items-center desktop:border-t desktop:border-t-gray-200 desktop:rounded-b-xl desktop:mt-2"
+                  >
+                    <span
+                      class="desktop:font-['Shabnam'] desktop:text-[#9b2c2c] desktop:text-sm"
+                      >ناموجود</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--mobile bestsellers-->
+    <div
+      class="mobile:mx-auto mobile:px-4 mobile:max-w-screen-xl bg-[#e2e2e2] mobile:pb-8 mobile:mb-5 desktop:hidden mobile:block"
+    >
+      <!--heading-->
+      <div
+        class="mobile:flex mobile:items-center mobile:justify-between mobile:py-5"
+      >
+        <h1
+          class="mobile:font-bold mobile:text-[#757575] mobile:text-[22px] font-['Shabnam']"
+        >
+          پرفروش‌ترین‌ محصولات
+        </h1>
+        <img
+          src="./public/images/available/more.png"
+          alt="more"
+          class="mobile:w-4"
+        />
+      </div>
+      <!--end heading-->
+
+      <!--Swiper-->
+      <div class="swiper myavailableMobile">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide mobile:shadow mobile:rounded-xl">
+            <a
+              href="#"
+              class="mobile:rounded-xl mobile:block mobile:font-['Shabnam'] mobile:bg-white"
+            >
+              <img
+                src="./public/images/bestsellers/image-1.jpg"
+                alt=""
+                class="rounded-t-2xl"
+              />
+              <p
+                class="mobile:text-xs mobile:text-gray-400 mobile:mt-4 mobile:text-center"
+              >
+                دو سر تایپ سی
+              </p>
+              <p class="mobile:text-sm mobile:mt-4 mobile:text-center">
+                کابل شارژ دوسر تایپ سی 1.8 متری
+              </p>
+              <div
+                class="mobile:flex mobile:justify-end mobile:items-center mobile:px-3 font-['Shabnam'] mobile:gap-1 mobile:pb-2 mobile:mt-8"
+              >
+                <span
+                  class="mobile:text-lg mobile:text-[#0a5abd] mobile:font-bold"
+                  >۵۴۵,۰۰۰
+                </span>
+                <span class="mobile:text-xs mobile:text-gray-500">تومان</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide mobile:shadow-sm mobile:rounded-xl">
+            <a
+              href="#"
+              class="mobile:rounded-xl mobile:block mobile:font-['Shabnam'] relative mobile:bg-white"
+            >
+              <img
+                src="./public/images/bestsellers/image-2.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p
+                class="mobile:text-xs mobile:text-gray-400 mobile:mt-4 mobile:text-center"
+              >
+                باتری آلکالاین
+              </p>
+              <p class="mobile:text-sm mobile:mt-4 mobile:text-center px-3">
+                باتری نیم قلم 10 تایی شیائومی
+              </p>
+              <div
+                class="mobile:flex mobile:justify-end mobile:items-center mobile:px-3 font-['Shabnam'] mobile:gap-1 mobile:pb-2 mobile:mt-8"
+              >
+                <span
+                  class="mobile:text-lg mobile:text-[#0a5abd] mobile:font-bold"
+                  >۱۸۹,۰۰۰
+                </span>
+                <span class="mobile:text-xs mobile:text-gray-500">تومان</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide mobile:shadow-sm mobile:rounded-xl">
+            <a
+              href="#"
+              class="mobile:rounded-xl mobile:block mobile:font-['Shabnam'] relative mobile:bg-white"
+            >
+              <img
+                src="./public/images/bestsellers/image-3.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p
+                class="mobile:text-xs mobile:text-gray-400 mobile:mt-4 mobile:text-center"
+              >
+                انواع گجت های جذاب
+              </p>
+              <p class="mobile:text-sm mobile:mt-4 mobile:text-center">
+                باتری قلمی 10تایی شیائومی Xiao
+              </p>
+              <div
+                class="mobile:flex mobile:justify-end mobile:items-center mobile:px-3 font-['Shabnam'] mobile:gap-1 mobile:pb-2 mobile:mt-8"
+              >
+                <span
+                  class="mobile:text-lg mobile:text-[#0a5abd] mobile:font-bold"
+                  >۱۸۹,۰۰۰
+                </span>
+                <span class="mobile:text-xs mobile:text-gray-500">تومان</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide mobile:shadow-sm mobile:rounded-xl">
+            <a
+              href="#"
+              class="mobile:rounded-xl mobile:block mobile:font-['Shabnam'] mobile:bg-white"
+            >
+              <img
+                src="./public/images/bestsellers/image-4.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p
+                class="mobile:text-xs mobile:text-gray-400 mobile:mt-4 mobile:text-center"
+              >
+                ماوس و کیبورد و پدموس
+              </p>
+              <p class="mobile:text-sm mobile:mt-4 mobile:text-center px-2">
+                کیبورد بلوتوثی مدل Mofii Phoe
+              </p>
+              <div
+                class="mobile:flex mobile:justify-end mobile:items-center mobile:px-3 font-['Shabnam'] mobile:gap-1 mobile:pb-2 mobile:mt-8"
+              >
+                <span
+                  class="mobile:text-lg mobile:text-[#0a5abd] mobile:font-bold"
+                  >۲,۵۹۰,۰۰۰
+                </span>
+                <span class="mobile:text-xs mobile:text-gray-500">تومان</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide mobile:shadow-sm mobile:rounded-xl">
+            <a
+              href="#"
+              class="mobile:rounded-xl mobile:block mobile:font-['Shabnam'] mobile:bg-white"
+            >
+              <img
+                src="./public/images/bestsellers/image-5.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p
+                class="mobile:text-xs mobile:text-gray-400 mobile:mt-4 mobile:text-center"
+              >
+                پاوربانک و جامپ استارتر
+              </p>
+              <p class="mobile:text-sm mobile:mt-4 mobile:text-center">
+                جامپ استارتر و پمپ باد پاورولوژی
+              </p>
+              <div
+                class="mobile:flex mobile:justify-end mobile:items-center mobile:px-3 font-['Shabnam'] mobile:gap-1 mobile:pb-2 mobile:mt-8"
+              >
+                <span
+                  class="mobile:text-lg mobile:text-[#0a5abd] mobile:font-bold"
+                  >۶,۷۹۵,۰۰۰
+                </span>
+                <span class="mobile:text-xs mobile:text-gray-500">تومان</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide mobile:shadow-sm mobile:rounded-xl">
+            <a
+              href="#"
+              class="mobile:rounded-xl mobile:block mobile:font-['Shabnam'] mobile:bg-white"
+            >
+              <img
+                src="./public/images/bestsellers/image-6.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p
+                class="mobile:text-xs mobile:text-gray-400 mobile:mt-4 mobile:text-center"
+              >
+                شارژر رومیزی
+              </p>
+              <p class="mobile:text-sm mobile:mt-4 mobile:text-center px-2">
+                شارژر رومیزی وایرلس مگ موفی
+              </p>
+              <div
+                class="mobile:flex mobile:justify-end mobile:items-center mobile:px-3 font-['Shabnam'] mobile:gap-1 mobile:pb-2 mobile:mt-8"
+              >
+                <span
+                  class="mobile:text-lg mobile:text-[#0a5abd] mobile:font-bold"
+                  >۲,۲۰۰,۰۰۰
+                </span>
+                <span class="mobile:text-xs mobile:text-gray-500">تومان</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide mobile:shadow-sm mobile:rounded-xl">
+            <a
+              href="#"
+              class="mobile:rounded-xl mobile:block mobile:font-['Shabnam'] mobile:bg-white"
+            >
+              <img
+                src="./public/images/bestsellers/image-7.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p
+                class="mobile:text-xs mobile:text-gray-400 mobile:mt-4 mobile:text-center"
+              >
+                پاوربانک و جامپ استارتر
+              </p>
+              <p class="mobile:text-sm mobile:mt-4 mobile:text-center px-2">
+                شارژر دیواری مدل وایرلس 100
+              </p>
+              <div
+                class="mobile:flex mobile:justify-end mobile:items-center mobile:px-3 font-['Shabnam'] mobile:gap-1 mobile:pb-2 mobile:mt-8"
+              >
+                <span
+                  class="mobile:text-lg mobile:text-[#0a5abd] mobile:font-bold"
+                  >۳,۱۵۰,۰۰۰
+                </span>
+                <span class="mobile:text-xs mobile:text-gray-500">تومان</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide mobile:shadow-sm mobile:rounded-xl">
+            <a
+              href="#"
+              class="mobile:rounded-xl mobile:block mobile:font-['Shabnam'] mobile:bg-white"
+            >
+              <img
+                src="./public/images/bestsellers/image-8.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p
+                class="mobile:text-xs mobile:text-gray-400 mobile:mt-4 mobile:text-center"
+              >
+                رینگ لایت و پایه
+              </p>
+              <p class="mobile:text-sm mobile:mt-4 mobile:text-center">
+                رینگ لایت 18 اینچ 100 واتی هارمونی
+              </p>
+              <div
+                class="mobile:flex mobile:justify-end mobile:items-center mobile:px-3 font-['Shabnam'] mobile:gap-1 mobile:pb-2 mobile:mt-8"
+              >
+                <span
+                  class="mobile:text-lg mobile:text-[#0a5abd] mobile:font-bold"
+                  >۳,۴۹۰,۰۰۰
+                </span>
+                <span class="mobile:text-xs mobile:text-gray-500">تومان</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide mobile:shadow-sm mobile:rounded-xl">
+            <a
+              href="#"
+              class="mobile:rounded-xl mobile:block mobile:font-['Shabnam'] mobile:bg-white"
+            >
+              <img
+                src="./public/images/bestsellers/image-9.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p
+                class="mobile:text-xs mobile:text-gray-400 mobile:mt-4 mobile:text-center"
+              >
+                هندزفری بلوتوث دو گوش
+              </p>
+              <p class="mobile:text-sm mobile:mt-4 mobile:text-center px-2">
+                هندزفری بلوتوثی ورزشی پاورولوژی
+              </p>
+              <div
+                class="mobile:flex mobile:justify-end mobile:items-center mobile:px-3 font-['Shabnam'] mobile:gap-1 mobile:pb-2 mobile:mt-8"
+              >
+                <span
+                  class="mobile:text-lg mobile:text-[#0a5abd] mobile:font-bold"
+                  >۲,۳۹۵,۰۰۰
+                </span>
+                <span class="mobile:text-xs mobile:text-gray-500">تومان</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide mobile:shadow-sm mobile:rounded-xl">
+            <a
+              href="#"
+              class="mobile:rounded-xl mobile:block mobile:font-['Shabnam'] mobile:bg-white"
+            >
+              <img
+                src="./public/images/bestsellers/image-10.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p
+                class="mobile:text-xs mobile:text-gray-400 mobile:mt-4 mobile:text-center"
+              >
+                شارژر دیواری
+              </p>
+              <p class="mobile:text-sm mobile:mt-4 mobile:text-center">
+                شارژر دیواری گان 100 واتی الدینیو
+              </p>
+              <div
+                class="mobile:flex mobile:justify-end mobile:items-center mobile:px-3 font-['Shabnam'] mobile:gap-1 mobile:pb-2 mobile:mt-8"
+              >
+                <span
+                  class="mobile:text-lg mobile:text-[#0a5abd] mobile:font-bold"
+                  >۱,۷۹۷,۰۰۰
+                </span>
+                <span class="mobile:text-xs mobile:text-gray-500">تومان</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide mobile:shadow-sm mobile:rounded-xl">
+            <a
+              href="#"
+              class="mobile:rounded-xl mobile:block mobile:font-['Shabnam'] mobile:bg-white"
+            >
+              <img
+                src="./public/images/bestsellers/image-11.jpg"
+                alt=""
+                class="rounded-2xl"
+              />
+              <p
+                class="mobile:text-xs mobile:text-gray-400 mobile:mt-4 mobile:text-center"
+              >
+                انواع گجت های جذاب
+              </p>
+              <p class="mobile:text-sm mobile:mt-4 mobile:text-center">
+                شارژر رومیزی وایرلس و چراغ رومیزی
+              </p>
+              <div
+                class="mobile:w-full mobile:h-[60px] mobile:bg-[#FFF5F5] mobile:flex mobile:justify-center mobile:items-center mobile:border-t mobile:border-t-gray-200 mobile:rounded-b-xl mobile:mt-2"
+              >
+                <span
+                  class="mobile:font-['Shabnam'] mobile:text-[#9b2c2c] mobile:text-sm"
+                  >ناموجود</span
+                >
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <!--desktop popular-brands-->
+    <div class="desktop:mt-10 mobile:hidden desktop:block">
+      <!--heading-->
+      <div class="desktop:px-10 desktop:mb-5">
+        <h1
+          class="desktop:font-['Shabnam'] desktop:text-[#696969] desktop:text-2xl desktop:font-bold"
+        >
+          محبوب‌ترین برندها
+        </h1>
+      </div>
+      <!--end heading-->
+      <div class="desktop:w-[95%] desktop:mx-auto">
+        <!-- swiper -->
+        <div class="swiper mycategories">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a
+                href="#"
+                class="desktop:flex desktop:items-center desktop:p-2 desktop:justify-center desktop:rounded-xl desktop:shadow-md desktop:bg-white desktop:my-4 desktop:border desktop:border-gray-100 desktop:transform desktop:hover:-translate-y-3 desktop:duration-200"
+                ><img
+                  src="./public/images/popular-brands/image-1.jpg"
+                  alt=""
+                  class="desktop:desktop:w-24 mobile:w-20"
+              /></a>
+            </div>
+
+            <div class="swiper-slide">
+              <a
+                href="#"
+                class="desktop:flex desktop:items-center desktop:p-2 desktop:justify-center desktop:rounded-xl desktop:shadow-md desktop:bg-white desktop:my-4 desktop:border desktop:border-gray-100 desktop:transform desktop:hover:-translate-y-3 desktop:duration-200"
+                ><img
+                  src="./public/images/popular-brands/image-2.jpg"
+                  alt=""
+                  class="desktop:desktop:w-24 mobile:w-20"
+              /></a>
+            </div>
+
+            <div class="swiper-slide">
+              <a
+                href="#"
+                class="desktop:flex desktop:items-center desktop:p-2 desktop:justify-center desktop:rounded-xl desktop:shadow-md desktop:bg-white desktop:my-4 desktop:border desktop:border-gray-100 desktop:transform desktop:hover:-translate-y-3 desktop:duration-200"
+                ><img
+                  src="./public/images/popular-brands/image-3.jpg"
+                  alt=""
+                  class="desktop:desktop:w-24 mobile:w-20"
+              /></a>
+            </div>
+
+            <div class="swiper-slide">
+              <a
+                href="#"
+                class="desktop:flex desktop:items-center desktop:p-2 desktop:justify-center desktop:rounded-xl desktop:shadow-md desktop:bg-white desktop:my-4 desktop:border desktop:border-gray-100 desktop:transform desktop:hover:-translate-y-3 desktop:duration-200"
+                ><img
+                  src="./public/images/popular-brands/image-4.jpg"
+                  alt=""
+                  class="desktop:desktop:w-24 mobile:w-20"
+              /></a>
+            </div>
+
+            <div class="swiper-slide">
+              <a
+                href="#"
+                class="desktop:flex desktop:items-center desktop:p-2 desktop:justify-center desktop:rounded-xl desktop:shadow-md desktop:bg-white desktop:my-4 desktop:border desktop:border-gray-100 desktop:transform desktop:hover:-translate-y-3 desktop:duration-200"
+                ><img
+                  src="./public/images/popular-brands/image-5.jpg"
+                  alt=""
+                  class="desktop:desktop:w-24 mobile:w-20"
+              /></a>
+            </div>
+
+            <div class="swiper-slide">
+              <a
+                href="#"
+                class="desktop:flex desktop:items-center desktop:p-2 desktop:justify-center desktop:rounded-xl desktop:shadow-md desktop:bg-white desktop:my-4 desktop:border desktop:border-gray-100 desktop:transform desktop:hover:-translate-y-3 desktop:duration-200"
+                ><img
+                  src="./public/images/popular-brands/image-6.jpg"
+                  alt=""
+                  class="desktop:desktop:w-24 mobile:w-20"
+              /></a>
+            </div>
+
+            <div class="swiper-slide">
+              <a
+                href="#"
+                class="desktop:flex desktop:items-center desktop:p-2 desktop:justify-center desktop:rounded-xl desktop:shadow-md desktop:bg-white desktop:my-4 desktop:border desktop:border-gray-100 desktop:transform desktop:hover:-translate-y-3 desktop:duration-200"
+                ><img
+                  src="./public/images/popular-brands/image-7.jpg"
+                  alt=""
+                  class="desktop:desktop:w-24 mobile:w-20"
+              /></a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--mobile popular brands-->
+    <div
+      class="mobile:mx-auto mobile:px-4 mobile:max-w-screen-xl desktop:hidden mobile:block"
+    >
+      <h1
+        class="font-['Shabnam'] text-[#757575] font-bold text-[24px] mobile:mb-4"
+      >
+        محبوب‌ترین برندها
+      </h1>
+      <!--Swiper-->
+      <div class="swiper mycategoriesMobile">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a
+              href="#"
+              class="mobile:flex mobile:items-center mobile:p-2 mobile:justify-center mobile:rounded-xl mobile:shadow-md mobile:bg-white mobile:my-4 mobile:border mobile:border-gray-100"
+              ><img
+                src="./public/images/popular-brands/image-1.jpg"
+                alt=""
+                class="desktop:w-24 mobile:w-20"
+            /></a>
+          </div>
+
+          <div class="swiper-slide">
+            <a
+              href="#"
+              class="mobile:flex mobile:items-center mobile:p-2 mobile:justify-center mobile:rounded-xl mobile:shadow-md mobile:bg-white mobile:my-4 mobile:border mobile:border-gray-100"
+              ><img
+                src="./public/images/popular-brands/image-2.jpg"
+                alt=""
+                class="desktop:w-24 mobile:w-20"
+            /></a>
+          </div>
+
+          <div class="swiper-slide">
+            <a
+              href="#"
+              class="mobile:flex mobile:items-center mobile:p-2 mobile:justify-center mobile:rounded-xl mobile:shadow-md mobile:bg-white mobile:my-4 mobile:border mobile:border-gray-100"
+              ><img
+                src="./public/images/popular-brands/image-3.jpg"
+                alt=""
+                class="desktop:w-24 mobile:w-20"
+            /></a>
+          </div>
+
+          <div class="swiper-slide">
+            <a
+              href="#"
+              class="mobile:flex mobile:items-center mobile:p-2 mobile:justify-center mobile:rounded-xl mobile:shadow-md mobile:bg-white mobile:my-4 mobile:border mobile:border-gray-100"
+              ><img
+                src="./public/images/popular-brands/image-4.jpg"
+                alt=""
+                class="desktop:w-24 mobile:w-20"
+            /></a>
+          </div>
+
+          <div class="swiper-slide">
+            <a
+              href="#"
+              class="mobile:flex mobile:items-center mobile:p-2 mobile:justify-center mobile:rounded-xl mobile:shadow-md mobile:bg-white mobile:my-4 mobile:border mobile:border-gray-100"
+              ><img
+                src="./public/images/popular-brands/image-5.jpg"
+                alt=""
+                class="desktop:w-24 mobile:w-20"
+            /></a>
+          </div>
+
+          <div class="swiper-slide">
+            <a
+              href="#"
+              class="mobile:flex mobile:items-center mobile:p-2 mobile:justify-center mobile:rounded-xl mobile:shadow-md mobile:bg-white mobile:my-4 mobile:border mobile:border-gray-100"
+              ><img
+                src="./public/images/popular-brands/image-6.jpg"
+                alt=""
+                class="desktop:w-24 mobile:w-20"
+            /></a>
+          </div>
+
+          <div class="swiper-slide">
+            <a
+              href="#"
+              class="mobile:flex mobile:items-center mobile:p-2 mobile:justify-center mobile:rounded-xl mobile:shadow-md mobile:bg-white mobile:my-4 mobile:border mobile:border-gray-100"
+              ><img
+                src="./public/images/popular-brands/image-7.jpg"
+                alt=""
+                class="desktop:w-24 mobile:w-20"
+            /></a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <!--desktop articles-->
+    <div
+      class="desktop:w-full desktop:flex desktop:justify-center desktop:items-center desktop:mt-5 mobile:hidden"
+    >
+      <div class="desktop:w-[95%]">
+        <!--heading-->
+        <div
+          class="flex justify-between items-center font-['Shabnam'] text-[#696969] mb-9"
+        >
+          <h1 class="text-2xl font-bold">آخرین مقالات</h1>
+          <a
+            href="#"
+            class="desktop:text-md flex desktop:justify-center items-center desktop:gap-2"
+          >
+            ورود به بلاگ
+            <img
+              src="./public/images/available/more.png"
+              alt=""
+              class="w-4 h-4"
+            />
+          </a>
+        </div>
+        <!--end heading-->
+        <div class="swiper myarticles">
+          <div class="swiper-wrapper desktop:pb-10">
+            <div class="swiper-slide desktop:hover:text-[#1c66c2]">
+              <a href="#" class="articles">
+                <div class="desktop:flex desktop:flex-col">
+                  <img
+                    src="./public/images/articles/image-1.jpg"
+                    alt=""
+                    class="mx-auto rounded-xl"
+                  />
+                  <div
+                    class="desktop:flex desktop:flex-col desktop:justify-around desktop:text-center font-['Shabnam']"
+                  >
+                    <h3
+                      class="desktop:leading-7 desktop:text-sm desktop:overflow-hidden desktop:h-16 desktop:px-4 desktop:flex desktop:items-center desktop:justify-center"
+                    >
+                      <span>معرفی ۵ مدل از بهترین میکروفون بویا</span>
+                    </h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide desktop:hover:text-[#1c66c2]">
+              <a href="#" class="articles">
+                <div class="desktop:flex desktop:flex-col">
+                  <img
+                    src="./public/images/articles/image-2.jpg"
+                    alt=""
+                    class="mx-auto rounded-xl"
+                  />
+                  <div
+                    class="desktop:flex desktop:flex-col desktop:justify-around desktop:text-center desktop:font-['Shabnam']"
+                  >
+                    <h3
+                      class="desktop:leading-7 desktop:text-sm desktop:overflow-hidden desktop:h-16 desktop:px-4 desktop:flex desktop:items-center desktop:justify-center"
+                    >
+                      <span
+                        >راهنمای خرید بهترین میکروفون زیر ۱ میلیون تومان</span
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide desktop:hover:text-[#1c66c2]">
+              <a href="#" class="articles">
+                <div class="desktop:flex desktop:flex-col">
+                  <img
+                    src="./public/images/articles/image-3.jpg"
+                    alt=""
+                    class="mx-auto rounded-xl"
+                  />
+                  <div
+                    class="desktop:flex desktop:flex-col desktop:justify-around desktop:text-center desktop:font-['Shabnam']"
+                  >
+                    <h3
+                      class="desktop:leading-7 desktop:text-sm desktop:overflow-hidden desktop:h-16 desktop:px-4 desktop:flex desktop:items-center desktop:justify-center"
+                    >
+                      <span
+                        >بهترین هارد اکسترنال SSD: سرعت و امنیت در کنار
+                        هم!</span
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide desktop:hover:text-[#1c66c2]">
+              <a href="#" class="articles">
+                <div class="desktop:flex desktop:flex-col">
+                  <img
+                    src="./public/images/articles/image-4.jpg"
+                    alt=""
+                    class="mx-auto rounded-xl"
+                  />
+                  <div
+                    class="desktop:flex desktop:flex-col desktop:justify-around desktop:text-center desktop:font-['Shabnam']"
+                  >
+                    <h3
+                      class="desktop:leading-7 desktop:text-sm desktop:overflow-hidden desktop:h-16 desktop:px-4 desktop:flex desktop:items-center desktop:justify-center"
+                    >
+                      <span
+                        >بهترین ساعت‌ های هوشمند صفحه گرد: قیمت و مدل‌های برتر
+                        د...</span
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide desktop:hover:text-[#1c66c2]">
+              <a href="#" class="articles">
+                <div class="desktop:flex desktop:flex-col">
+                  <img
+                    src="./public/images/articles/image-5.jpg"
+                    alt=""
+                    class="mx-auto rounded-xl"
+                  />
+                  <div
+                    class="desktop:flex desktop:flex-col desktop:justify-around desktop:text-center desktop:font-['Shabnam']"
+                  >
+                    <h3
+                      class="desktop:leading-7 desktop:text-sm desktop:overflow-hidden desktop:h-16 desktop:px-4 desktop:flex desktop:items-center desktop:justify-center"
+                    >
+                      <span
+                        >بهترین پاوربانک پاورولوژی + ۵ مدل از با کیفیت ترین
+                        ها</span
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide desktop:hover:text-[#1c66c2]">
+              <a href="#" class="articles">
+                <div class="desktop:flex desktop:flex-col">
+                  <img
+                    src="./public/images/articles/image-6.jpg"
+                    alt=""
+                    class="mx-auto rounded-xl"
+                  />
+                  <div
+                    class="desktop:flex desktop:flex-col desktop:justify-around desktop:text-center desktop:font-['Shabnam']"
+                  >
+                    <h3
+                      class="desktop:leading-7 desktop:text-sm desktop:overflow-hidden desktop:h-16 desktop:px-4 desktop:flex desktop:items-center desktop:justify-center"
+                    >
+                      <span
+                        >راهنمای تشخیص شارژر اصلی آیفون و بهترین
+                        جایگزین‌ها</span
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide desktop:hover:text-[#1c66c2]">
+              <a href="#" class="articles">
+                <div class="desktop:flex desktop:flex-col">
+                  <img
+                    src="./public/images/articles/image-7.jpg"
+                    alt=""
+                    class="mx-auto rounded-xl"
+                  />
+                  <div
+                    class="desktop:flex desktop:flex-col desktop:justify-around desktop:text-center desktop:font-['Shabnam']"
+                  >
+                    <h3
+                      class="desktop:leading-7 desktop:text-sm desktop:overflow-hidden desktop:h-16 desktop:px-4 desktop:flex desktop:items-center desktop:justify-center"
+                    >
+                      <span>چرا باید از ماساژور چشم استفاده کنید؟</span>
+                    </h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide desktop:hover:text-[#1c66c2]">
+              <a href="#" class="articles">
+                <div class="desktop:flex desktop:flex-col">
+                  <img
+                    src="./public/images/articles/image-8.jpg"
+                    alt=""
+                    class="mx-auto rounded-xl"
+                  />
+                  <div
+                    class="desktop:flex desktop:flex-col desktop:justify-around desktop:text-center desktop:font-['Shabnam']"
+                  >
+                    <h3
+                      class="desktop:leading-7 desktop:text-sm desktop:overflow-hidden desktop:h-16 desktop:px-4 desktop:flex desktop:items-center desktop:justify-center"
+                    >
+                      <span>شارژر وایرلس اپل چگونه کار میکند؟</span>
+                    </h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--mobile articles-->
+    <div
+      class="mobile:max-w-screen-xl mobile:mx-auto mobile:pb-12 desktop:hidden"
+    >
+      <div class="mobile:grid mobile:grid-cols-6 mobile:grid-rows-1">
+        <div class="mobile:col-span-6 mobile:px-4">
+          <!--heading-->
+          <div
+            class="mobile:flex mobile:w-full mobile:justify-between mobile:pt-6 mobile:pb-2"
+          >
+            <div class="mobile:flex mobile:flex-1 mobile:flex-col">
+              <div
+                class="mobile:flex mobile:w-full mobile:justify-between mobile:py-6 mobile:items-center"
+              >
+                <span
+                  class="mobile:text-2xl mobile:text-center mobile:font-bold mobile:text-[#757575] font-['Shabnam']"
+                  >آخرین مقالات</span
+                >
+                <img
+                  src="./public/images/available/more.png"
+                  alt="more"
+                  class="mobile:w-4 mobile:h-4"
+                />
+              </div>
+            </div>
+          </div>
+          <!--end heading-->
+
+          <!--Swiper-->
+          <div class="swiper myarticlesMobile">
+            <div class="swiper-wrapper pb-9">
+              <div class="swiper-slide">
+                <a href="#" class="articles">
+                  <div class="mobile:flex mobile:flex-col">
+                    <img
+                      src="./public/images/articles/image-1.jpg"
+                      alt=""
+                      class="mx-auto rounded-xl"
+                    />
+                    <div
+                      class="mobile:flex mobile:flex-col mobile:justify-around mobile:text-center font-['Shabnam']"
+                    >
+                      <h3
+                        class="mobile:leading-7 mobile:text-xs mobile:overflow-hidden h-16 mobile:px-4 mobile:flex mobile:items-center mobile:justify-center"
+                      >
+                        <span>معرفی ۵ مدل از بهترین میکروفون بویا</span>
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="articles">
+                  <div class="mobile:flex mobile:flex-col">
+                    <img
+                      src="./public/images/articles/image-2.jpg"
+                      alt=""
+                      class="mx-auto rounded-xl"
+                    />
+                    <div
+                      class="mobile:flex mobile:flex-col mobile:justify-around mobile:text-center mobile:font-['Shabnam']"
+                    >
+                      <h3
+                        class="mobile:leading-7 mobile:text-xs mobile:overflow-hidden h-16 mobile:px-4 mobile:flex mobile:items-center mobile:justify-center"
+                      >
+                        <span
+                          >راهنمای خرید بهترین میکروفون زیر ۱ میلیون تومان</span
+                        >
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="articles">
+                  <div class="mobile:flex mobile:flex-col">
+                    <img
+                      src="./public/images/articles/image-3.jpg"
+                      alt=""
+                      class="mx-auto rounded-xl"
+                    />
+                    <div
+                      class="mobile:flex mobile:flex-col mobile:justify-around mobile:text-center mobile:font-['Shabnam']"
+                    >
+                      <h3
+                        class="mobile:leading-7 mobile:text-xs mobile:overflow-hidden h-16 mobile:px-4 mobile:flex mobile:items-center mobile:justify-center"
+                      >
+                        <span
+                          >بهترین هارد اکسترنال SSD: سرعت و امنیت در کنار
+                          هم!</span
+                        >
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="articles">
+                  <div class="mobile:flex mobile:flex-col">
+                    <img
+                      src="./public/images/articles/image-4.jpg"
+                      alt=""
+                      class="mx-auto rounded-xl"
+                    />
+                    <div
+                      class="mobile:flex mobile:flex-col mobile:justify-around mobile:text-center mobile:font-['Shabnam']"
+                    >
+                      <h3
+                        class="mobile:leading-7 mobile:text-xs mobile:overflow-hidden h-16 mobile:px-4 mobile:flex mobile:items-center mobile:justify-center"
+                      >
+                        <span
+                          >بهترین ساعت‌ های هوشمند صفحه گرد: قیمت و مدل‌های برتر
+                          د...</span
+                        >
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="articles">
+                  <div class="mobile:flex mobile:flex-col">
+                    <img
+                      src="./public/images/articles/image-5.jpg"
+                      alt=""
+                      class="mx-auto rounded-xl"
+                    />
+                    <div
+                      class="mobile:flex mobile:flex-col mobile:justify-around mobile:text-center mobile:font-['Shabnam']"
+                    >
+                      <h3
+                        class="mobile:leading-7 mobile:text-xs mobile:overflow-hidden h-16 mobile:px-4 mobile:flex mobile:items-center mobile:justify-center"
+                      >
+                        <span
+                          >بهترین پاوربانک پاورولوژی + ۵ مدل از با کیفیت ترین
+                          ها</span
+                        >
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="articles">
+                  <div class="mobile:flex mobile:flex-col">
+                    <img
+                      src="./public/images/articles/image-6.jpg"
+                      alt=""
+                      class="mx-auto rounded-xl"
+                    />
+                    <div
+                      class="mobile:flex mobile:flex-col mobile:justify-around mobile:text-center mobile:font-['Shabnam']"
+                    >
+                      <h3
+                        class="mobile:leading-7 mobile:text-xs mobile:overflow-hidden h-16 mobile:px-4 mobile:flex mobile:items-center mobile:justify-center"
+                      >
+                        <span
+                          >راهنمای تشخیص شارژر اصلی آیفون و بهترین
+                          جایگزین‌ها</span
+                        >
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="articles">
+                  <div class="mobile:flex mobile:flex-col">
+                    <img
+                      src="./public/images/articles/image-7.jpg"
+                      alt=""
+                      class="mx-auto rounded-xl"
+                    />
+                    <div
+                      class="mobile:flex mobile:flex-col mobile:justify-around mobile:text-center mobile:font-['Shabnam']"
+                    >
+                      <h3
+                        class="mobile:leading-7 mobile:text-xs mobile:overflow-hidden h-16 mobile:px-4 mobile:flex mobile:items-center mobile:justify-center"
+                      >
+                        <span>چرا باید از ماساژور چشم استفاده کنید؟</span>
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="articles">
+                  <div class="mobile:flex mobile:flex-col">
+                    <img
+                      src="./public/images/articles/image-8.jpg"
+                      alt=""
+                      class="mx-auto rounded-xl"
+                    />
+                    <div
+                      class="mobile:flex mobile:flex-col mobile:justify-around mobile:text-center mobile:font-['Shabnam']"
+                    >
+                      <h3
+                        class="mobile:leading-7 mobile:text-xs mobile:overflow-hidden h-16 mobile:px-4 mobile:flex mobile:items-center mobile:justify-center"
+                      >
+                        <span>شارژر وایرلس اپل چگونه کار میکند؟</span>
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer class="desktop:w-full font-['Shabnam'] mt-7">
+      <!--1st row-->
+      <div class="first-row">
+        <div class="information">
+          <img src="./public/images/footer/phone.png" alt="phone" class="w-5" />
+          ۰۲۱-۳۳۹۰۲۶۴۶
+        </div>
+
+        <div class="information">
+          <img
+            src="./public/images/footer/clock.png"
+            alt="clock"
+            class="w-[18px] ml-1"
+          />
+          شنبه تا چهارشنبه از ۱۰ صبح الی ساعت ۱۸ پنجشنبه ها از ۱۰ صبح الی ساعت
+          ۱۶
+        </div>
+
+        <div class="information">
+          <img
+            src="./public/images/footer/location.png"
+            alt="clock"
+            class="w-[18px]"
+          />
+          تهران - میدان امام خمینی - پاساژ لباف - همکف - پلاک ۳ - فروشگاه بدیع
+        </div>
+
+        <div class="go-up">
+          <a
+            href="#"
+            class="desktop:flex desktop:items-center desktop:gap-7 desktop:hover:text-black"
+            id="scrollUpBtn"
+            >برو بالا
+            <img
+              src="./public/images/footer/up.png"
+              alt=""
+              class="desktop:w-3"
+            />
+          </a>
+        </div>
+      </div>
+      <!--2nd row-->
+      <div class="second-row">
+        <!--logo-->
+        <div class="footer-logo">
+          <img
+            src="./public/images/header/logo.png"
+            alt="logo"
+            class="max-w-[190px]"
+          />
+          <div class="footer-instagram">
+            <span class="font-['Shabnam'] text-sm">با ما در ارتباط باشید:</span>
+            <a href="#">
+              <img
+                src="./public/images/footer/instagram.png"
+                alt="instagram"
+                class="w-6"
+              />
+            </a>
+          </div>
+        </div>
+        <!--about-->
+        <div class="mt-3 font-['Shabnam']">
+          <div
+            class="font-bold text-xl mb-4 mobile:mt-10 mobile:px-4 desktop:mt-0"
+          >
+            فروشگاه اینترنتی دسترسی
+          </div>
+          <div class="leading-7 text-[#626262] mobile:px-4">
+            فروشگاه دسترسی فعالیت خود را از سال 1389 به صورت فروش فیزیکی کالا در
+            حوزه لوازم جانبی کامپیوتر و موبایل در تهران شروع کرد و از سال 1398
+            از طریق پیج اینستاگرام وارد فروش آنلاین شد و به خاطر ارائه کالای
+            اصلی و مشاوره های دقیق در بازه بسیار کوتاهی توانست اعتماد بسیاری از
+            مشتریانش را جلب کند و سرانجام در سال 1399 فروش از طریق سایت را هم به
+            فعالیت های خود اضافه کرد تا اینکه بتواند با بررسی دقیق کالاها انتخاب
+            صحیح شما را به ارمغان آورد. و امروز دسترسی فعالیت خود را در زمینه
+            آداپتور موبایل، کابل شارژ، پاوربانک، ساعت هوشمند، هندزفری و هدست،
+            لوازم گیمینگ، باتری و شارژر، لوازم شبکه، تجهیزات ذخیره سازی، گیرنده
+            دیجیتال و هزاران گجت جذاب ادامه میدهد.
+          </div>
+        </div>
+        <!--fast-access-->
+        <div class="desktop:w-full font-['Shabnam'] desktop:mt-3">
+          <h1
+            class="text-[20px] font-bold mb-4 mobile:text-center mobile:mt-8 desktop:mt-0 desktop:text-right"
+          >
+            دسترسی سریع
+          </h1>
+          <div class="flex desktop:flex-row gap-16 desktop:justify-between">
+            <div class="flex flex-col mobile:px-4 font-['Shabnam']">
+              <a href="#" class="fast-access">باشگاه مشتریان</a>
+              <a href="#" class="fast-access">سوالات متداول</a>
+              <a href="#" class="fast-access">بلاگ</a>
+              <a href="#" class="fast-access">شرایط و قوانین</a>
+              <a href="#" class="fast-access">ارتباط با ما</a>
+              <a href="#" class="fast-access">درباره ما</a>
+            </div>
+          </div>
+        </div>
+        <!--eNamad-->
+        <div
+          class="desktop:mt-4 w-full flex items-center desktop:justify-right mobile:justify-center"
+        >
+          <a href="#">
+            <img src="./public/images/footer/enamad.png" alt="enamad" />
+          </a>
+        </div>
+      </div>
+      <!--3rd row-->
+      <div class="third-row">
+        تمامی حقوق این سایت محفوظ و متعلق به فروشگاه اینترنتی دسترسی می‌باشد.
+      </div>
+    </footer>
+
+    <!--backup-->
+    <div
+      class="w-14 h-14 bg-[#3f51b5] rounded-2xl desktop:cursor-pointer box-shadow flex justify-center items-center fixed right-1 bottom-4 !z-[999] hover:scale-110 transition-transform duration-100"
+    >
+      <img src="./public/images/backup/chat.png" alt="" class="w-8" />
+    </div>
+
+    <!--notification-->
+    <div
+      class="desktop:w-[50px] desktop:h-[50px] mobile:w-[60px] mobile:h-[60px] bg-[#FF9900] rounded-full flex justify-center items-center fixed z-[99999] desktop:right-20 desktop:bottom-12 mobile:right-8 mobile:bottom-9 desktop:cursor-pointer desktop:hover:bg-red-600 group"
+    >
+      <div
+        class="border-[2px] border-white rounded-full desktop:w-10 desktop:h-10 flex justify-center items-center desktop:group-hover:border-0 mobile:w-12 mobile:h-12"
+      >
+        <img
+          src="./public/images/notification/notification.svg"
+          alt="bell"
+          class="desktop:w-6 mobile:w-7 group-hover:w-[35px] transition-all duration-200"
+        />
+      </div>
+    </div>
+
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script src="./src/js/main.js"></script>
+
+    <!--swiper scripts-->
+    <script>
+      var swiper = new Swiper(".myslideshow", {
+        spaceBetween: 30,
+        effect: "fade",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mycategories", {
+        slidesPerView: 6,
+        spaceBetween: 25,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mycategoriesMobile", {
+        slidesPerView: 3,
+        spaceBetween: 15,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".myavailable", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".myavailableMobile", {
+        slidesPerView: 2,
+        spaceBetween: 15,
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".myAvailableMobile", {
+        slidesPerView: 2,
+        spaceBetween: 15,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".myarticles", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".myarticlesMobile", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".myarticles", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: {
+          delay: 2800,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+  </body>
+</html>

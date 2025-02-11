@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Shabnam;
+  src: url(../public/fonts/Shabnam.eot);
+  src: url(../public/fonts/Shabnam.ttf);
+  src: url(../public/fonts/Shabnam.woff);
+  src: url(../public/fonts/Shabnam.woff2);
+}
+
+@layer components {
+  .menu {
+    @apply desktop:relative desktop:flex desktop:justify-center desktop:items-center desktop:text-[#666666] desktop:hover:text-[#FE5F55];
+  }
+  .brands {
+    @apply desktop:flex desktop:justify-between desktop:text-xs desktop:text-[#666666];
+  }
+  .categories {
+    @apply desktop:w-[185px] desktop:h-[185px] desktop:object-cover desktop:block;
+  }
+  .why-dastresi {
+    @apply desktop:flex desktop:flex-col desktop:p-4 desktop:justify-center desktop:items-center;
+  }
+  .first-row {
+    @apply bg-[#E2E2E2] flex desktop:items-center text-sm p-6 text-[#787575] desktop:justify-evenly desktop:gap-3 desktop:flex-row mobile:flex-col mobile:justify-between mobile:gap-4 mobile:leading-7;
+  }
+  .go-up {
+    @apply desktop:p-3 desktop:bg-white desktop:flex desktop:items-center desktop:justify-center desktop:rounded-xl desktop:shadow-md mobile:hidden;
+  }
+  .information {
+    @apply flex items-center gap-1;
+  }
+  .second-row {
+    @apply desktop:mx-auto desktop:p-4 desktop:flex desktop:gap-9 desktop:bg-[#F5F5F5];
+  }
+  .footer-logo {
+    @apply justify-center items-center flex gap-8 flex-col mobile:mt-10 desktop:mt-0;
+  }
+  .footer-instagram {
+    @apply flex desktop:flex-row desktop:flex-wrap gap-4 justify-center;
+  }
+  .fast-access {
+    @apply text-sm text-[#626262] desktop:hover:text-black mb-4;
+  }
+  .third-row {
+    @apply font-['Shabnam'] text-sm text-center bg-[#0A5ABD] text-white py-3;
+  }
+  .articles {
+    @apply flex flex-col bg-white shadow-md rounded-xl mb-2 justify-between;
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  transition: 300ms;
+  background-color: #eaecf8;
+  opacity: 1;
+  &:hover {
+    background-color: black;
+  }
+}
+.swiper-pagination-bullet-active {
+  border-radius: 5px !important;
+  background-color: black !important;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  width: 30px !important;
+  height: 30px !important;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  &:hover {
+    background-color: #c1c1c1;
+  }
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  font-size: 12px !important;
+  color: #6b7280;
+  font-weight: bold !important;
+}
+
+.box-shadow {
+  box-shadow: 0 1px 3px 0 #0000004d, 0 4px 8px 3px #00000026;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  background-color: #f0f0f1;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar-thumb {
+  width: 9px;
+  background-color: #2c5282;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #2c5282;
+}
+
+.custom-scrollbar {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #2c5282 #f0f0f0;
+}
