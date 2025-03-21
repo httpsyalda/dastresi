@@ -23,3 +23,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
   menuOverlay.addEventListener("click", closeMenu);
 });
+
+function toPersianNumbers(num) {
+  const persianDigits = '۰۱۲۳۴۵۶۷۸۹';
+  return num.toString().replace(/[0-9]/g, d => persianDigits[d]);
+}
+
+let totalSeconds = 12 * 3600 + 25 * 60 + 40;
+const timerElement = document.getElementById("timer");
+
+function updateTimer() {
+  let hours = Math.floor(totalSeconds / 3600);
+  let minutes = Math.floor((totalSeconds % 3600) / 60);
+  let seconds = totalSeconds % 60;
+  
+  timerElement.textContent = toPersianNumbers(
+      `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`
+  );
+
+  if (totalSeconds > 0) {
+      totalSeconds--;
+      setTimeout(updateTimer, 1000);
+  }
+}
+
+updateTimer();
