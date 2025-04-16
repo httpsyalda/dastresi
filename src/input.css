@@ -119,3 +119,15 @@
   scrollbar-width: thin;
   scrollbar-color: #2c5282 #f0f0f0;
 }
+
+.swiper-wrapper-categories {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  gap: 1rem; /* Add spacing between slides */
+}
+
+.swiper-slide {
+  flex: 0 0 auto; /* Prevent shrinking and ensure slides take up their content width */
+}
+
